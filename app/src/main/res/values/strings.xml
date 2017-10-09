@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Math4Us</string>
+    <string name="threetwo">¡Muy bien, 3 + 2 = 5!</string>
+    <string name="bee">bee</string>
+    <string name="plus">plus</string>
+    <string name="question">question</string>
 </resources>

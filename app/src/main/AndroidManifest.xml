@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.brendaperez.Main2Activity"></activity>
+        <activity android:name="com.example.brendaperez.Main2Activity" />
+        <activity android:name="udlap.ingdesoft.math4us.Level1_1" />
     </application>
 
 </manifest>
