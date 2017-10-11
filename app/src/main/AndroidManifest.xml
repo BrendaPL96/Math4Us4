@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.brendaperez.Main2Activity" />
-        <activity android:name="udlap.ingdesoft.math4us.Level1_1" />
+        <activity android:name="com.example.brendaperez.Main3Activity" />
+        <activity android:name="com.example.brendaperez.Main4Activity" />
+        <activity android:name="com.example.brendaperez.Main5Activity" />
+        <activity android:name="com.example.brendaperez.Main6Activity"></activity>
     </application>
 
 </manifest>
