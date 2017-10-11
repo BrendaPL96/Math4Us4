@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brendaperez.Main5Activity">
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.651" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.651" />
+
+    <ImageView
+        android:id="@+id/imageView47"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.951" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tercer Nivel"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.951" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.951" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.651" />
+
+    <ImageView
+        android:id="@+id/imageView53"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/imageView54"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.651" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.348" />
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageView51"
+        android:layout_width="81dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/cohete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.951" />
+
+</android.support.constraint.ConstraintLayout>

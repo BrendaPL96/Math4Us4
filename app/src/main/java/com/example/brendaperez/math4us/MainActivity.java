@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.brendaperez.Main2Activity;
+import com.example.brendaperez.Main6Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void cambio (View view) {
         Intent objI = new Intent(MainActivity.this,Main2Activity.class);
+        startActivity(objI);
+    }
+
+    public void cambio7 (View view){
+        Intent objI = new Intent(MainActivity.this, Main6Activity.class);
         startActivity(objI);
     }
 }
