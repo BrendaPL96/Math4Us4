@@ -20,7 +20,9 @@
         <activity android:name="com.example.brendaperez.Main3Activity" />
         <activity android:name="com.example.brendaperez.Main4Activity" />
         <activity android:name="com.example.brendaperez.Main5Activity" />
-        <activity android:name="com.example.brendaperez.Main6Activity"></activity>
+        <activity android:name="com.example.brendaperez.Main6Activity" />
+        <activity android:name=".Log_in" />
+        <activity android:name=".Registro"></activity>
     </application>
 
 </manifest>
