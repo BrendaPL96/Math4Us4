@@ -110,6 +110,7 @@
         android:layout_gravity="center"
         android:text="@string/threetwo"
         android:textAlignment="center"
+        android:textColor="#7fde20"
         android:textSize="30sp"
         android:visibility="gone" />
 
@@ -128,7 +129,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="1"
-            android:onClick="onClickOne"
+            android:onClick="onClickAll"
             android:src="@drawable/one" />
 
         <ImageView
@@ -138,7 +139,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="3"
-            android:onClick="onClickThree"
+            android:onClick="onClickAll"
             android:src="@drawable/three" />
 
         <ImageView
@@ -148,7 +149,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="5"
-            android:onClick="onClickFive"
+            android:onClick="onClickAll"
             android:src="@drawable/five" />
 
     </LinearLayout>
