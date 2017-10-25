@@ -23,7 +23,8 @@
         <activity android:name="com.example.brendaperez.NivelFraccion" />
         <activity android:name="com.example.brendaperez.SumasyRestas" />
         <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
-        <activity android:name="com.example.brendaperez.NivelSuma"></activity>
+        <activity android:name="com.example.brendaperez.NivelSuma" />
+        <activity android:name="udlap.ingdesoft.math4us.Level1_1"></activity>
     </application>
 
 </manifest>

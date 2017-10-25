@@ -14,7 +14,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="161dp"
         android:background="@color/colorAccent"
-        android:onClick="cambio7"
+        android:onClick="goSuma"
         android:text="Sumas"
         android:textColor="@android:color/white"
         android:textSize="40sp"
