@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.brendaperez.Main2Activity">
+    tools:context="com.example.brendaperez.Categorias">
 
 <!--
    <ImageView
@@ -19,49 +19,54 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="324dp"
-        android:layout_height="48dp"
+        android:layout_width="334dp"
+        android:layout_height="86dp"
         android:background="@android:color/holo_blue_light"
         android:text="Observadores"
         android:textSize="40sp"
+        android:textColor="@android:color/white"
         android:textStyle="normal|bold"
         android:onClick="cambio2"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.559" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:layout_height="85dp"
         android:background="@android:color/holo_orange_dark"
         android:text="Exploradores"
         android:textSize="40sp"
         android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
         android:onClick="cambio3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.507" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="328dp"
-        android:layout_height="51dp"
+        android:layout_width="342dp"
+        android:layout_height="83dp"
         android:background="@android:color/holo_green_light"
         android:text="Astronautas"
         android:textSize="40sp"
         android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
         android:onClick="cambio4"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.691" />
+        app:layout_constraintVertical_bias="0.776"
+        tools:layout_editor_absoluteX="40dp" />
 
 
 </android.support.constraint.ConstraintLayout>

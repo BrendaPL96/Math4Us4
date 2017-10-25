@@ -5,29 +5,28 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.brendaperez.math4us.MainActivity;
 import com.example.brendaperez.math4us.R;
 
-public class Main2Activity extends AppCompatActivity {
+public class Categorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.categorias);
     }
 
     public void cambio2 (View view){
-        Intent objI = new Intent(Main2Activity.this,Main3Activity.class);
+        Intent objI = new Intent(Categorias.this,SumasyRestas.class);
         startActivity(objI);
     }
 
     public void cambio3 (View view){
-        Intent objI = new Intent(Main2Activity.this, Main4Activity.class);
+        Intent objI = new Intent(Categorias.this, NivelMultiplicacion.class);
         startActivity(objI);
     }
 
     public void cambio4 (View view){
-        Intent objI = new Intent(Main2Activity.this, Main5Activity.class);
+        Intent objI = new Intent(Categorias.this, NivelFraccion.class);
         startActivity(objI);
     }
 

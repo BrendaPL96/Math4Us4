@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brendaperez.math4us.MainActivity">
+    tools:context="com.example.brendaperez.math4us.MenuPrincipal">
 
     <Button
         android:id="@+id/button"
@@ -27,7 +27,7 @@
         android:layout_width="132dp"
         android:layout_height="103dp"
         android:background="@android:color/holo_red_light"
-        android:onClick="cambio7"
+        android:onClick="cambio5"
         android:text="Crear o Ingresar"
         android:textSize="20sp"
         android:textStyle="normal|bold"

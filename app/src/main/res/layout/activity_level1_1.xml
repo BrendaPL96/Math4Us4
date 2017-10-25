@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="udlap.ingdesoft.math4us.Level1_1">
+    tools:context="com.example.brendaperez.Level1_1">
+
 
 
     <LinearLayout

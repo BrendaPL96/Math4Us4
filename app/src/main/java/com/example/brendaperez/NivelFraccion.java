@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.brendaperez.math4us.R;
 
-public class Main4Activity extends AppCompatActivity {
+public class NivelFraccion extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.nivelfraccion);
     }
 }

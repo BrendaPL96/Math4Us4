@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brendaperez.Main4Activity">
+    tools:context="com.example.brendaperez.NivelMultiplicacion">
 
     <ImageView
         android:id="@+id/imageView"
@@ -80,11 +80,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Segundo Nivel"
+        android:text="Multiplicación"
         android:textColor="@android:color/holo_red_light"
         android:textSize="40sp"
         android:textStyle="normal|bold"
-        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="4dp" />
 
     <ImageView

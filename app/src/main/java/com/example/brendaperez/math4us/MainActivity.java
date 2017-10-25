@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cambio7 (View view){
-        Intent objI = new Intent(MainActivity.this, Log_in.class);
+        Intent objI = new Intent(MainActivity.this, Main6Activity.class);
         startActivity(objI);
     }
 }
