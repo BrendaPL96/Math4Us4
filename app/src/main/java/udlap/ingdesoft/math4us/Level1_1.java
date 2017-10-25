@@ -25,6 +25,8 @@ public class Level1_1 extends AppCompatActivity {
     int digitLeft; //number of pictures on the left
     int digitRight; // number of pictures on the right
     int total; // total number of pictures
+    String bravoSumStatic; //the original string in string.xml
+    String bravoSum; // the generated string depending on the sum
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +39,19 @@ public class Level1_1 extends AppCompatActivity {
         bravo = (TextView) findViewById(R.id.bravo);
         leftSum = (LinearLayout) findViewById(R.id.leftSum);
         rightSum = (LinearLayout) findViewById(R.id.rightSum);
+
     }
 
     protected int countBee() {
+        // counting the number of bee on each side
         digitLeft = leftSum.getChildCount();
         digitRight = rightSum.getChildCount();
         total = digitLeft + digitRight;
+        // generating the congratulation text
+        bravoSumStatic = getResources().getString(R.string.bravoSum);
+        bravoSum = String.format(bravoSumStatic, digitLeft, digitRight, total);
+        bravo.setText(bravoSum);
+        //returning the total
         return total;
     }
 
