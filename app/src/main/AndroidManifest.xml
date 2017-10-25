@@ -9,18 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MenuPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.brendaperez.Main2Activity" />
-        <activity android:name="com.example.brendaperez.Main3Activity" />
-        <activity android:name="com.example.brendaperez.Main4Activity" />
-        <activity android:name="com.example.brendaperez.Main5Activity" />
-        <activity android:name="com.example.brendaperez.Main6Activity"></activity>
+        <activity android:name="com.example.brendaperez.math4us.Log_in" />
+        <activity android:name="com.example.brendaperez.math4us.Registro" />
+        <activity android:name="com.example.brendaperez.Categorias" />
+        <activity android:name="com.example.brendaperez.Level1_1" />
+        <activity android:name="com.example.brendaperez.NivelFraccion" />
+        <activity android:name="com.example.brendaperez.SumasyRestas" />
+        <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
+        <activity android:name="com.example.brendaperez.NivelSuma"></activity>
     </application>
 
 </manifest>
