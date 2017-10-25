@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.brendaperez.Level1_1">
+    tools:context="udlap.ingdesoft.math4us.Level1_1">
 
 
 
@@ -15,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        tools:context="udlap.ingsoft.math4u.Level1">
+        tools:context="udlap.ingdesoft.math4us.Level1_1">
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,17 +25,17 @@
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:context="udlap.ingsoft.math4u.Level1">
+            tools:context="udlap.ingdesoft.math4us.Level1_1">
 
             <ImageView
-                android:id="@+id/abeille1"
+                android:id="@+id/bee1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/bee"
                 android:src="@drawable/bee" />
 
             <ImageView
-                android:id="@+id/abeille2"
+                android:id="@+id/bee2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -44,7 +43,7 @@
                 android:src="@drawable/bee" />
 
             <ImageView
-                android:id="@+id/abeille3"
+                android:id="@+id/bee3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/bee"
@@ -73,7 +72,7 @@
             tools:context="udlap.ingsoft.math4u.Level1">
 
             <ImageView
-                android:id="@+id/abeille4"
+                android:id="@+id/bee4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
@@ -81,7 +80,7 @@
                 android:src="@drawable/bee" />
 
             <ImageView
-                android:id="@+id/abeille5"
+                android:id="@+id/bee5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="end"

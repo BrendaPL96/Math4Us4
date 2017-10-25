@@ -19,7 +19,6 @@
         <activity android:name="com.example.brendaperez.math4us.Log_in" />
         <activity android:name="com.example.brendaperez.math4us.Registro" />
         <activity android:name="com.example.brendaperez.Categorias" />
-        <activity android:name="com.example.brendaperez.Level1_1" />
         <activity android:name="com.example.brendaperez.NivelFraccion" />
         <activity android:name="com.example.brendaperez.SumasyRestas" />
         <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
