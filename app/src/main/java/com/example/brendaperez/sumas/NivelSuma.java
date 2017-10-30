@@ -1,4 +1,4 @@
-package udlap.ingdesoft.math4us;
+package com.example.brendaperez.sumas;
 
 import android.animation.Animator;
 import android.os.Build;
@@ -13,11 +13,11 @@ import android.widget.TextView;
 
 import com.example.brendaperez.math4us.R;
 
-public class Level1_1 extends AppCompatActivity {
+public class NivelSuma extends AppCompatActivity {
 
-    ImageView one;
-    ImageView three;
-    ImageView five;
+    ImageView answerLeft;
+    ImageView answerCenter;
+    ImageView answerRight;
     ImageView question;
     TextView bravo;
     LinearLayout leftSum;
@@ -31,19 +31,19 @@ public class Level1_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_level1_1);
-        one = (ImageView) findViewById(R.id.One);
-        three = (ImageView) findViewById(R.id.Three);
-        five = (ImageView) findViewById(R.id.Five);
-        question = (ImageView) findViewById(R.id.question);
-        bravo = (TextView) findViewById(R.id.bravo);
-        leftSum = (LinearLayout) findViewById(R.id.leftSum);
-        rightSum = (LinearLayout) findViewById(R.id.rightSum);
+        answerLeft = findViewById(R.id.leftAnswer);
+        answerCenter = findViewById(R.id.centerAnswer);
+        answerRight = findViewById(R.id.rightAnswer);
+        question = findViewById(R.id.question);
+        bravo = findViewById(R.id.bravo);
+        leftSum = findViewById(R.id.leftSum);
+        rightSum = findViewById(R.id.rightSum);
 
     }
 
-    protected int countBee() {
-        // counting the number of bee on each side
+
+    protected int countPic() {
+        // counting the number of pictures on each side
         digitLeft = leftSum.getChildCount();
         digitRight = rightSum.getChildCount();
         total = digitLeft + digitRight;
@@ -71,26 +71,26 @@ public class Level1_1 extends AppCompatActivity {
 
     }
 
-    protected void onClickAll(View v) {
+    protected void onClickAnswer(View v) {
         CharSequence numberText = v.getContentDescription();
         int number = Integer.parseInt(numberText.toString());
         int id = v.getId();
-        ImageView image = (ImageView) findViewById(id);
-        if (number == countBee()) {
+        ImageView image = findViewById(id);
+        if (number == countPic()) {
             image.setImageResource(R.drawable.right);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(five);
+                animate(answerRight);
             }
-            if (three.isClickable()) {
-                three.setImageResource(R.drawable.wrong);
+            if (answerCenter.isClickable()) {
+                answerCenter.setImageResource(R.drawable.wrong);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(three);
+                    animate(answerCenter);
                 }
             }
-            if (one.isClickable()) {
-                one.setImageResource(R.drawable.wrong);
+            if (answerLeft.isClickable()) {
+                answerLeft.setImageResource(R.drawable.wrong);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(one);
+                    animate(answerLeft);
                 }
             }
             question.setVisibility(View.GONE);
@@ -99,26 +99,11 @@ public class Level1_1 extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 animate(bravo);
             }
-            five.setClickable(false);
+            answerRight.setClickable(false);
         } else {
             image.setImageResource(R.drawable.wrong);
             image.setClickable(false);
 
         }
-    }
-
-
-    protected void onClickOne(View v) {
-        one.setImageResource(R.drawable.wrong);
-    }
-
-    protected void onClickThree(View v) {
-        three.setImageResource(R.drawable.wrong);
-    }
-
-    protected void onClickFive(View v) {
-        five.setImageResource(R.drawable.right);
-        question.setVisibility(View.GONE);
-        bravo.setVisibility(View.VISIBLE);
     }
 }

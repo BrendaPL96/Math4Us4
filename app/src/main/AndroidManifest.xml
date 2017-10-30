@@ -16,14 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.brendaperez.math4us.Log_in" />
-        <activity android:name="com.example.brendaperez.math4us.Registro" />
+        <activity android:name=".Log_in" />
+        <activity android:name=".Registro" />
         <activity android:name="com.example.brendaperez.Categorias" />
         <activity android:name="com.example.brendaperez.NivelFraccion" />
         <activity android:name="com.example.brendaperez.SumasyRestas" />
         <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
-        <activity android:name="com.example.brendaperez.NivelSuma" />
-        <activity android:name="udlap.ingdesoft.math4us.Level1_1"></activity>
+        <activity android:name="com.example.brendaperez.SelectNivelSumas" />
+        <activity android:name="com.example.brendaperez.sumas.NivelSuma" />
+        <activity android:name="com.example.brendaperez.sumas.NivelSuma1" />
+        <activity android:name="com.example.brendaperez.sumas.NivelSuma2" />
     </application>
 
 </manifest>

@@ -15,9 +15,18 @@ public class SumasyRestas extends AppCompatActivity {
         setContentView(R.layout.sumasyrestas);
     }
 
-    public void goSuma(View view) {
+    public void goSumas(View view) {
 
-        Intent objI = new Intent(SumasyRestas.this,NivelSuma.class);
+        Intent objI = new Intent(SumasyRestas.this, SelectNivelSumas.class);
         startActivity(objI);
     }
+
+    /*
+    public void goRestas(View view) {
+
+        Intent objI = new Intent(SumasyRestas.this,SelectNivelRestas.class);
+        startActivity(objI);
+    }
+    */
+
 }

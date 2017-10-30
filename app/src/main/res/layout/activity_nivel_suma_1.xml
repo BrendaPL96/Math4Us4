@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="udlap.ingdesoft.math4us.Level1_1">
+    tools:context="com.example.brendaperez.sumas.NivelSuma">
 
 
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        tools:context="udlap.ingdesoft.math4us.Level1_1">
+        tools:context="com.example.brendaperez.sumas.NivelSuma">
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -26,7 +26,7 @@
             android:layout_marginStart="20dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:context="udlap.ingdesoft.math4us.Level1_1">
+            tools:context="com.example.brendaperez.sumas.NivelSuma">
 
             <ImageView
                 android:id="@+id/bee1"
@@ -71,7 +71,7 @@
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:orientation="vertical"
-            tools:context="udlap.ingsoft.math4u.Level1">
+            tools:context="com.example.brendaperez.sumas.NivelSuma">
 
             <ImageView
                 android:id="@+id/bee4"
@@ -120,36 +120,36 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="20dp"
         android:layout_weight="1"
-        tools:context="udlap.ingsoft.math4u.Level1">
+        tools:context="com.example.brendaperez.sumas.NivelSuma">
 
         <ImageView
-            android:id="@+id/One"
+            android:id="@+id/leftAnswer"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="1"
-            android:onClick="onClickAll"
+            android:onClick="onClickAnswer"
             android:src="@drawable/one" />
 
         <ImageView
-            android:id="@+id/Three"
+            android:id="@+id/centerAnswer"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="3"
-            android:onClick="onClickAll"
+            android:onClick="onClickAnswer"
             android:src="@drawable/three" />
 
         <ImageView
-            android:id="@+id/Five"
+            android:id="@+id/rightAnswer"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="5"
-            android:onClick="onClickAll"
+            android:onClick="onClickAnswer"
             android:src="@drawable/five" />
 
     </LinearLayout>
