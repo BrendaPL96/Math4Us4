@@ -83,9 +83,9 @@ public class NivelSuma extends AppCompatActivity {
         int id = v.getId(); // get the id of this image
         ImageView image = findViewById(id); //
         if (number == countPic()) {
+            question.setVisibility(View.GONE);
+            bravo.setVisibility(View.VISIBLE);
             if (answerLeftInt == countPic()) {
-                question.setVisibility(View.GONE);
-                bravo.setVisibility(View.VISIBLE);
                 image.setImageResource(R.drawable.right);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     animate(image);
