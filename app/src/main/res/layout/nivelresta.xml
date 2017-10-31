@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brendaperez.NivelResta">
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView39"
+        app:layout_constraintLeft_toRightOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView40"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageView38"
+        app:layout_constraintBottom_toTopOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView41"
+        app:layout_constraintLeft_toRightOf="@+id/imageView36"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageView40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="61dp"
+        android:text="Restas"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView28"
+        app:layout_constraintLeft_toRightOf="@+id/imageView35"
+        app:layout_constraintBottom_toTopOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView" android:contentDescription="TODO"/>
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageView19"
+        app:layout_constraintBottom_toTopOf="@+id/imageView39"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView38"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+    <ImageView
+        android:id="@+id/imageView36"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="98dp"
+        android:layout_height="122dp"
+        app:srcCompat="@drawable/lupa"
+        app:layout_constraintRight_toLeftOf="@+id/imageView19"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
