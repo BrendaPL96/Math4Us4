@@ -29,6 +29,7 @@
         <activity android:name="com.example.brendaperez.sumas.NivelSuma3" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma4" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma5" />
+        <activity android:name="com.example.brendaperez.sumas.NivelSuma6" />
         <activity android:name="com.example.brendaperez.FraccionesyExtra" />
         <activity android:name="com.example.brendaperez.MultiplicacionyDivision" />
         <activity android:name="com.example.brendaperez.NivelDivision" />

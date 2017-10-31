@@ -80,6 +80,7 @@
         android:id="@+id/lvl6"
         android:layout_width="98dp"
         android:layout_height="122dp"
+        android:onClick="goLvl6"
         app:layout_constraintBottom_toTopOf="@+id/lvl9"
         app:layout_constraintLeft_toRightOf="@+id/lvl5"
         app:layout_constraintRight_toRightOf="parent"
