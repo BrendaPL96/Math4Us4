@@ -26,6 +26,8 @@
         <activity android:name="com.example.brendaperez.sumas.NivelSuma" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma1" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma2" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta1" />
     </application>
 
 </manifest>
