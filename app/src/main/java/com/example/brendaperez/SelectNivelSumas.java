@@ -8,6 +8,7 @@ import android.view.View;
 import com.example.brendaperez.math4us.R;
 import com.example.brendaperez.sumas.NivelSuma1;
 import com.example.brendaperez.sumas.NivelSuma2;
+import com.example.brendaperez.sumas.NivelSuma3;
 
 public class SelectNivelSumas extends AppCompatActivity {
 
@@ -24,6 +25,11 @@ public class SelectNivelSumas extends AppCompatActivity {
 
     public void goLvl2(View view) {
         Intent objI = new Intent(SelectNivelSumas.this, NivelSuma2.class);
+        startActivity(objI);
+    }
+
+    public void goLvl3 (View view){
+        Intent objI = new Intent(SelectNivelSumas.this, NivelSuma3.class);
         startActivity(objI);
     }
 }

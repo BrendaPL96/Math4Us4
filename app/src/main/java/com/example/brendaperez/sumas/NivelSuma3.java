@@ -1,15 +1,15 @@
-package com.example.brendaperez;
+package com.example.brendaperez.sumas;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.brendaperez.math4us.R;
 
-public class NivelResta extends AppCompatActivity {
+public class NivelSuma3 extends NivelSuma {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setContentView(R.layout.activity_nivel_suma_3);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nivelresta);
+
     }
 }

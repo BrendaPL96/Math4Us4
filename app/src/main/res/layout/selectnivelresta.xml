@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brendaperez.NivelResta">
+    tools:context="com.example.brendaperez.SelectNivelResta">
 
     <ImageView
         android:id="@+id/imageView38"
@@ -105,6 +105,7 @@
         android:id="@+id/imageView35"
         android:layout_width="98dp"
         android:layout_height="122dp"
+        android:onClick="goNivelResta"
         app:srcCompat="@drawable/lupa"
         app:layout_constraintRight_toLeftOf="@+id/imageView19"
         app:layout_constraintLeft_toLeftOf="parent"

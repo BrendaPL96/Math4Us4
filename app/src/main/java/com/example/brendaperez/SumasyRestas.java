@@ -22,7 +22,7 @@ public class SumasyRestas extends AppCompatActivity {
     }
 
     public void goRestas(View view){
-        Intent objI = new Intent(SumasyRestas.this,NivelResta.class);
+        Intent objI = new Intent(SumasyRestas.this,SelectNivelResta.class);
         startActivity(objI);
     }
 }
