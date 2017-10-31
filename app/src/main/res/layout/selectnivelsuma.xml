@@ -69,6 +69,7 @@
         android:id="@+id/lvl5"
         android:layout_width="98dp"
         android:layout_height="122dp"
+        android:onClick="goLvl5"
         app:layout_constraintBottom_toTopOf="@+id/lvl8"
         app:layout_constraintLeft_toRightOf="@+id/lvl4"
         app:layout_constraintRight_toLeftOf="@+id/lvl6"
