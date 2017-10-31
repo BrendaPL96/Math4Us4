@@ -16,8 +16,11 @@ import com.example.brendaperez.math4us.R;
 public class NivelSuma extends AppCompatActivity {
 
     ImageView answerLeft;
+    int answerLeftInt;
     ImageView answerCenter;
+    int answerCenterInt;
     ImageView answerRight;
+    int answerRightInt;
     ImageView question;
     TextView bravo;
     LinearLayout leftSum;
@@ -32,8 +35,11 @@ public class NivelSuma extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         answerLeft = findViewById(R.id.leftAnswer);
+        answerLeftInt = Integer.parseInt((answerLeft.getContentDescription()).toString());
         answerCenter = findViewById(R.id.centerAnswer);
+        answerCenterInt = Integer.parseInt((answerCenter.getContentDescription()).toString());
         answerRight = findViewById(R.id.rightAnswer);
+        answerRightInt = Integer.parseInt((answerRight.getContentDescription()).toString());
         question = findViewById(R.id.question);
         bravo = findViewById(R.id.bravo);
         leftSum = findViewById(R.id.leftSum);
@@ -72,34 +78,32 @@ public class NivelSuma extends AppCompatActivity {
     }
 
     protected void onClickAnswer(View v) {
-        CharSequence numberText = v.getContentDescription();
-        int number = Integer.parseInt(numberText.toString());
-        int id = v.getId();
-        ImageView image = findViewById(id);
+        CharSequence numberText = v.getContentDescription(); //read the contentDescription attribute, which is the value of the image in charseq
+        int number = Integer.parseInt(numberText.toString()); // convert this value in int
+        int id = v.getId(); // get the id of this image
+        ImageView image = findViewById(id); //
         if (number == countPic()) {
-            image.setImageResource(R.drawable.right);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(answerRight);
-            }
-            if (answerCenter.isClickable()) {
-                answerCenter.setImageResource(R.drawable.wrong);
+            if (answerLeftInt == countPic()) {
+                question.setVisibility(View.GONE);
+                bravo.setVisibility(View.VISIBLE);
+                image.setImageResource(R.drawable.right);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(answerCenter);
+                    animate(image);
                 }
             }
-            if (answerLeft.isClickable()) {
-                answerLeft.setImageResource(R.drawable.wrong);
+            if (answerCenterInt == countPic()) {
+                image.setImageResource(R.drawable.right);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(answerLeft);
+                    animate(image);
                 }
             }
-            question.setVisibility(View.GONE);
 
-            bravo.setVisibility(View.VISIBLE);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(bravo);
+            if (answerRightInt == countPic()) {
+                image.setImageResource(R.drawable.right);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    animate(image);
+                }
             }
-            answerRight.setClickable(false);
         } else {
             image.setImageResource(R.drawable.wrong);
             image.setClickable(false);
