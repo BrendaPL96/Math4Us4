@@ -15,18 +15,18 @@ public class Categorias extends AppCompatActivity {
         setContentView(R.layout.categorias);
     }
 
-    public void cambio2 (View view){
+    public void goSumasRestas (View view){
         Intent objI = new Intent(Categorias.this,SumasyRestas.class);
         startActivity(objI);
     }
 
-    public void cambio3 (View view){
-        Intent objI = new Intent(Categorias.this, NivelMultiplicacion.class);
+    public void goMultiDiv (View view){
+        Intent objI = new Intent(Categorias.this,MultiplicacionyDivision.class);
         startActivity(objI);
     }
 
-    public void cambio4 (View view){
-        Intent objI = new Intent(Categorias.this, NivelFraccion.class);
+    public void goFraccExtra (View view){
+        Intent objI = new Intent(Categorias.this,FraccionesyExtra.class);
         startActivity(objI);
     }
 
