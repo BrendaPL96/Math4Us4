@@ -91,6 +91,7 @@
         android:id="@+id/lvl7"
         android:layout_width="98dp"
         android:layout_height="122dp"
+        android:onClick="goLvl7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/lvl8"
