@@ -77,7 +77,7 @@ public class NivelResta extends AppCompatActivity {
 
     }
 
-    protected void onClickAnswer(View v) {
+    public void onClickAnswer(View v) {
         CharSequence numberText = v.getContentDescription();
         int number = Integer.parseInt(numberText.toString());
         int id = v.getId();

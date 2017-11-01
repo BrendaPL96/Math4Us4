@@ -27,7 +27,6 @@
         android:layout_width="148dp"
         android:layout_height="133dp"
         android:background="@android:color/holo_red_light"
-        android:onClick="cambio5"
         android:text="Crear o Ingresar"
         android:textColor="@android:color/white"
         android:textSize="20sp"

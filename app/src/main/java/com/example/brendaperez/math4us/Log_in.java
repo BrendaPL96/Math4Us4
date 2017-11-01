@@ -16,7 +16,7 @@ public class Log_in extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        tv_registrar = (TextView) findViewById(R.id.registrar);
+        tv_registrar = findViewById(R.id.registrar);
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
