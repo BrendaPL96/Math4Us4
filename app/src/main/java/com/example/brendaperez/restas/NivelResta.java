@@ -16,8 +16,11 @@ import com.example.brendaperez.math4us.R;
 public class NivelResta extends AppCompatActivity {
 
     ImageView answerLeft;
+    int answerLeftInt;
     ImageView answerCenter;
+    int answerCenterInt;
     ImageView answerRight;
+    int answerRightInt;
     ImageView question;
     TextView bravo;
     LinearLayout leftRest;
@@ -32,8 +35,11 @@ public class NivelResta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         answerLeft = findViewById(R.id.leftAnswer);
+        answerLeftInt = Integer.parseInt((answerLeft.getContentDescription()).toString());
         answerCenter = findViewById(R.id.centerAnswer);
+        answerCenterInt = Integer.parseInt((answerCenter.getContentDescription()).toString());
         answerRight = findViewById(R.id.rightAnswer);
+        answerRightInt = Integer.parseInt((answerRight.getContentDescription()).toString());
         question = findViewById(R.id.question);
         bravo = findViewById(R.id.bravo);
         leftRest = findViewById(R.id.leftRest);
@@ -77,29 +83,31 @@ public class NivelResta extends AppCompatActivity {
         int id = v.getId();
         ImageView image = findViewById(id);
         if (number == countPic()) {
+            question.setVisibility(View.GONE);
+            bravo.setVisibility(View.VISIBLE);
             image.setImageResource(R.drawable.right);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(answerRight);
+                animate(image);
             }
-            if (answerCenter.isClickable()) {
+            if (answerLeftInt == countPic()) {
                 answerCenter.setImageResource(R.drawable.wrong);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(answerCenter);
-                }
+                answerCenter.setClickable(false);
+                answerRight.setImageResource(R.drawable.wrong);
+                answerRight.setClickable(false);
             }
-            if (answerLeft.isClickable()) {
+            if (answerCenterInt == countPic()) {
+                answerRight.setImageResource(R.drawable.wrong);
+                answerRight.setClickable(false);
                 answerLeft.setImageResource(R.drawable.wrong);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(answerLeft);
-                }
+                answerLeft.setClickable(false);
             }
-            question.setVisibility(View.GONE);
 
-            bravo.setVisibility(View.VISIBLE);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(bravo);
+            if (answerRightInt == countPic()) {
+                answerCenter.setImageResource(R.drawable.wrong);
+                answerCenter.setClickable(false);
+                answerLeft.setImageResource(R.drawable.wrong);
+                answerLeft.setClickable(false);
             }
-            answerRight.setClickable(false);
         } else {
             image.setImageResource(R.drawable.wrong);
             image.setClickable(false);

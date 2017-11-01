@@ -85,21 +85,17 @@ public class NivelSuma extends AppCompatActivity {
         if (number == countPic()) {
             question.setVisibility(View.GONE);
             bravo.setVisibility(View.VISIBLE);
+            image.setImageResource(R.drawable.right);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                animate(image);
+            }
             if (answerLeftInt == countPic()) {
-                image.setImageResource(R.drawable.right);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(image);
-                }
                 answerCenter.setImageResource(R.drawable.wrong);
                 answerCenter.setClickable(false);
                 answerRight.setImageResource(R.drawable.wrong);
                 answerRight.setClickable(false);
             }
             if (answerCenterInt == countPic()) {
-                image.setImageResource(R.drawable.right);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(image);
-                }
                 answerRight.setImageResource(R.drawable.wrong);
                 answerRight.setClickable(false);
                 answerLeft.setImageResource(R.drawable.wrong);
@@ -107,10 +103,6 @@ public class NivelSuma extends AppCompatActivity {
             }
 
             if (answerRightInt == countPic()) {
-                image.setImageResource(R.drawable.right);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    animate(image);
-                }
                 answerCenter.setImageResource(R.drawable.wrong);
                 answerCenter.setClickable(false);
                 answerLeft.setImageResource(R.drawable.wrong);
