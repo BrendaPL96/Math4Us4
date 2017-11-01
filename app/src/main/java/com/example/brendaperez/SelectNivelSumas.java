@@ -13,6 +13,8 @@ import com.example.brendaperez.sumas.NivelSuma4;
 import com.example.brendaperez.sumas.NivelSuma5;
 import com.example.brendaperez.sumas.NivelSuma6;
 import com.example.brendaperez.sumas.NivelSuma7;
+import com.example.brendaperez.sumas.NivelSuma8;
+import com.example.brendaperez.sumas.NivelSuma9;
 
 public class SelectNivelSumas extends AppCompatActivity {
 
@@ -56,5 +58,17 @@ public class SelectNivelSumas extends AppCompatActivity {
         Intent objI = new Intent(SelectNivelSumas.this, NivelSuma7.class);
         startActivity(objI);
     }
+
+    public void goLvl8 (View view){
+        Intent objI = new Intent(SelectNivelSumas.this, NivelSuma8.class);
+        startActivity(objI);
+    }
+
+    public void goLvl9 (View view){
+        Intent objI = new Intent(SelectNivelSumas.this, NivelSuma9.class);
+        startActivity(objI);
+    }
+
+
 
 }

@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="247dp"
+        android:layout_height="419dp"
         android:layout_marginTop="15dp"
         android:layout_weight="1"
         tools:context="com.example.brendaperez.sumas.NivelSuma">
@@ -37,7 +37,16 @@
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
 
                 <ImageView
                     android:id="@+id/bee10"
@@ -47,7 +56,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
                 <ImageView
                     android:id="@+id/bee15"
@@ -57,17 +66,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
-                    android:id="@+id/bee17"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="20dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
             </LinearLayout>
 
             <LinearLayout
@@ -82,14 +81,6 @@
                 tools:context="com.example.brendaperez.sumas.NivelSuma">
 
                 <ImageView
-                    android:id="@+id/bee9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
                     android:id="@+id/bee8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -97,7 +88,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
                 <ImageView
                     android:id="@+id/bee11"
@@ -106,16 +97,16 @@
                     android:layout_gravity="end"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
                 <ImageView
-                    android:id="@+id/bee14"
+                    android:id="@+id/bee21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginTop="20dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
             </LinearLayout>
         </LinearLayout>
@@ -139,46 +130,6 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/rightSum2"
-                android:layout_width="39dp"
-                android:layout_height="330dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/bee12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
-                    android:id="@+id/bee19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
-                    android:id="@+id/bee18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
-                    android:id="@+id/bee"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/rightSum"
                 android:layout_width="38dp"
                 android:layout_height="wrap_content"
@@ -192,7 +143,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
 
                 <ImageView
                     android:id="@+id/bee16"
@@ -200,15 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
-
-                <ImageView
-                    android:id="@+id/bee20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
                 <ImageView
                     android:id="@+id/bee13"
@@ -216,8 +167,64 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:contentDescription="@string/bee"
-                    android:src="@drawable/dog" />
+                    android:src="@drawable/koala" />
 
+                <ImageView
+                    android:id="@+id/bee27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightSum2"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bee12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
+
+                <ImageView
+                    android:id="@+id/bee28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="@string/bee"
+                    android:src="@drawable/koala" />
             </LinearLayout>
 
         </LinearLayout>
@@ -247,7 +254,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_weight="1"
         tools:context="com.example.brendaperez.sumas.NivelSuma">
@@ -258,9 +265,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:contentDescription="21"
+            android:contentDescription="9"
             android:onClick="onClickAnswer"
-            android:src="@drawable/veintiuno" />
+            android:src="@drawable/nueve" />
 
         <ImageView
             android:id="@+id/centerAnswer"
@@ -268,9 +275,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:contentDescription="16"
+            android:contentDescription="41"
             android:onClick="onClickAnswer"
-            android:src="@drawable/dieciseis" />
+            android:src="@drawable/cuarentayuno" />
 
         <ImageView
             android:id="@+id/rightAnswer"
@@ -278,9 +285,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:contentDescription="10"
+            android:contentDescription="17"
             android:onClick="onClickAnswer"
-            android:src="@drawable/diez" />
+            android:src="@drawable/diecisiete" />
 
     </LinearLayout>
 </LinearLayout>
