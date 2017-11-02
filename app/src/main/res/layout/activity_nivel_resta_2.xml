@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.brendaperez.restas.NivelResta">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.restas.NivelResta">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/leftRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.restas.NivelResta">
+
+            <ImageView
+                android:id="@+id/octopus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+            <ImageView
+                android:id="@+id/octopus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+            <ImageView
+                android:id="@+id/octopus3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/minus"
+            android:src="@drawable/minus" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rightRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.restas.NivelResta">
+
+            <ImageView
+                android:id="@+id/octopus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+            <ImageView
+                android:id="@+id/octopus5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+            <ImageView
+                android:id="@+id/octopus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:contentDescription="@string/octopus"
+                android:src="@drawable/nemo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/question"
+        android:src="@drawable/question"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bravo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/bravoSum"
+        android:textAlignment="center"
+        android:textColor="#7fde20"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.restas.NivelResta">
+
+        <ImageView
+            android:id="@+id/leftAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="6"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/six" />
+
+        <ImageView
+            android:id="@+id/centerAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="3"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/three" />
+
+        <ImageView
+            android:id="@+id/rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="0"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/zero" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
