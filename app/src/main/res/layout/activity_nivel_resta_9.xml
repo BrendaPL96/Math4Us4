@@ -31,43 +31,43 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/bee23"
+                    android:id="@+id/cat1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee6"
+                    android:id="@+id/cat2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee10"
+                    android:id="@+id/cat3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee15"
+                    android:id="@+id/cat4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
             </LinearLayout>
 
@@ -83,30 +83,30 @@
                 tools:context="com.example.brendaperez.restas.NivelResta">
 
                 <ImageView
-                    android:id="@+id/bee9"
+                    android:id="@+id/cat5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee8"
+                    android:id="@+id/cat6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee11"
+                    android:id="@+id/cat7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginTop="5dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
             </LinearLayout>
@@ -140,26 +140,26 @@
                 tools:context="com.example.brendaperez.restas.NivelResta">
 
                 <ImageView
-                    android:id="@+id/bee4"
+                    android:id="@+id/cat8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee16"
+                    android:id="@+id/cat9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee13"
+                    android:id="@+id/cat10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
             </LinearLayout>
@@ -172,19 +172,19 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/bee12"
+                    android:id="@+id/cat11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
 
                 <ImageView
-                    android:id="@+id/bee"
+                    android:id="@+id/cat12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="@string/bee"
+                    android:contentDescription="@string/cat"
                     android:src="@drawable/cat" />
             </LinearLayout>
 
