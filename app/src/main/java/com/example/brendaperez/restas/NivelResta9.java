@@ -19,7 +19,7 @@ public class NivelResta9 extends NivelResta {
         digitLeft = leftRest2.getChildCount() + leftRest.getChildCount();
         LinearLayout rightRest2 = findViewById(R.id.rightRest2);
         digitRight = rightRest.getChildCount() + rightRest2.getChildCount();
-        total = digitLeft + digitRight;
+        total = digitLeft - digitRight;
         // generating the congratulation text
         bravoRestStatic = getResources().getString(R.string.bravoRest);
         bravoRest = String.format(bravoRestStatic, digitLeft, digitRight, total);
