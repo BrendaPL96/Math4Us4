@@ -45,6 +45,9 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta4" />
         <activity android:name="com.example.brendaperez.restas.NivelResta5" />
         <activity android:name="com.example.brendaperez.restas.NivelResta6" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta7" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta8" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta9" />
     </application>
 
 </manifest>

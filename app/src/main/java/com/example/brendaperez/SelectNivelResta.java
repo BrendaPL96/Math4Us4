@@ -12,6 +12,9 @@ import com.example.brendaperez.restas.NivelResta3;
 import com.example.brendaperez.restas.NivelResta4;
 import com.example.brendaperez.restas.NivelResta5;
 import com.example.brendaperez.restas.NivelResta6;
+import com.example.brendaperez.restas.NivelResta7;
+import com.example.brendaperez.restas.NivelResta8;
+import com.example.brendaperez.restas.NivelResta9;
 
 public class SelectNivelResta extends AppCompatActivity {
 
@@ -48,6 +51,21 @@ public class SelectNivelResta extends AppCompatActivity {
 
     public void goNivelResta6 (View view){
         Intent objI = new Intent(SelectNivelResta.this, NivelResta6.class);
+        startActivity(objI);
+    }
+
+    public void goNivelResta7 (View view){
+        Intent objI = new Intent(SelectNivelResta.this, NivelResta7.class);
+        startActivity(objI);
+    }
+
+    public void goNivelResta8 (View view){
+        Intent objI = new Intent(SelectNivelResta.this, NivelResta8.class);
+        startActivity(objI);
+    }
+
+    public void goNivelResta9 (View view){
+        Intent objI = new Intent(SelectNivelResta.this, NivelResta9.class);
         startActivity(objI);
     }
 
