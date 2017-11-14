@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuPrincipal"/>
+        <activity android:name=".MenuPrincipal" />
         <activity android:name=".Log_in">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +50,7 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta7" />
         <activity android:name="com.example.brendaperez.restas.NivelResta8" />
         <activity android:name="com.example.brendaperez.restas.NivelResta9" />
+        <activity android:name=".Tablauno"></activity>
     </application>
 
 </manifest>
