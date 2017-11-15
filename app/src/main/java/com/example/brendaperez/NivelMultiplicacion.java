@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.brendaperez.math4us.R;
+import com.example.brendaperez.math4us.Tablados;
 import com.example.brendaperez.math4us.Tablauno;
 import com.example.brendaperez.sumas.NivelSuma4;
 
@@ -19,6 +20,11 @@ public class NivelMultiplicacion extends AppCompatActivity {
 
     public void goTabla1 (View view){
         Intent objI = new Intent(NivelMultiplicacion.this, Tablauno.class);
+        startActivity(objI);
+    }
+
+    public void goTabla2 (View view){
+        Intent objI = new Intent(NivelMultiplicacion.this,Tablados.class);
         startActivity(objI);
     }
 }

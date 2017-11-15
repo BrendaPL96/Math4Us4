@@ -15,8 +15,8 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.566"
+        app:srcCompat="@drawable/mundocuatro" />
 
     <ImageView
         android:id="@+id/imageView28"
@@ -27,14 +27,14 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.873"
+        app:srcCompat="@drawable/mundonueve" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Multiplicación"
+        android:text="Tablas de Multiplicación"
         android:textColor="@android:color/holo_red_light"
         android:textSize="40sp"
         android:textStyle="normal|bold"
@@ -49,43 +49,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.656"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.875"
+        app:srcCompat="@drawable/mundoocho" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -96,8 +61,8 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.877"
+        app:srcCompat="@drawable/mundosiete" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -108,8 +73,8 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/mundoseis" />
 
     <ImageView
         android:id="@+id/imageView33"
@@ -119,8 +84,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@drawable/mundocinco" />
 
     <ImageView
         android:id="@+id/imageView35"
@@ -131,19 +96,20 @@
         app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/mundotres" />
 
     <ImageView
         android:id="@+id/imageView36"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/mundodos" />
 
     <ImageView
         android:id="@+id/imageView37"
@@ -155,7 +121,7 @@
         app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186"
-        app:srcCompat="@drawable/mundo" />
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@drawable/mundouno" />
 
 </android.support.constraint.ConstraintLayout>

@@ -10,10 +10,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="208dp"
-        android:layout_height="271dp"
+        android:layout_width="287dp"
+        android:layout_height="343dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        />
     <EditText
         android:id="@+id/user"
         android:layout_width="match_parent"
@@ -28,25 +29,21 @@
         android:hint="INTRODUCE TU CONTRASEÑA"
         android:inputType="textPassword"
         />
-
     <Button
         android:id="@+id/entrar"
-        style="@android:style/Widget.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@android:color/holo_green_light"
+        android:text="ENTRAR"
         android:onClick="goCategorias"
-        android:text="ENTRAR" />
-
-    <Button
+        android:layout_gravity="center"
+        />
+    <TextView
         android:id="@+id/registrar"
-        style="@android:style/Widget.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Registrate!"
         android:layout_gravity="center"
-        android:background="@android:color/transparent"
-        android:text="Registrate"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        />
 
 </LinearLayout>
