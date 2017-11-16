@@ -49,7 +49,14 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta8" />
         <activity android:name="com.example.brendaperez.restas.NivelResta9" />
         <activity android:name=".Tablauno" />
-        <activity android:name=".Tablados"></activity>
+        <activity android:name=".Tablados" />
+        <activity android:name=".Tablatres" />
+        <activity android:name=".Tablacuatro" />
+        <activity android:name=".Tablacinco" />
+        <activity android:name=".Tablaseis" />
+        <activity android:name=".Tablasiete" />
+        <activity android:name=".Tablaocho" />
+        <activity android:name=".Tablanueve"></activity>
     </application>
 
 </manifest>

@@ -7,9 +7,10 @@
     tools:context="com.example.brendaperez.NivelMultiplicacion">
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/Boton4"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
@@ -19,9 +20,10 @@
         app:srcCompat="@drawable/mundocuatro" />
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/Boton9"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.905"
@@ -42,9 +44,10 @@
         tools:layout_editor_absoluteY="4dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/Boton8"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,9 +56,10 @@
         app:srcCompat="@drawable/mundoocho" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/Boton7"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
@@ -65,9 +69,10 @@
         app:srcCompat="@drawable/mundosiete" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/Boton6"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.905"
@@ -77,9 +82,10 @@
         app:srcCompat="@drawable/mundoseis" />
 
     <ImageView
-        android:id="@+id/imageView33"
+        android:id="@+id/Boton5"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,9 +94,10 @@
         app:srcCompat="@drawable/mundocinco" />
 
     <ImageView
-        android:id="@+id/imageView35"
+        android:id="@+id/Boton3"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goTabla3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.905"
@@ -100,7 +107,7 @@
         app:srcCompat="@drawable/mundotres" />
 
     <ImageView
-        android:id="@+id/imageView36"
+        android:id="@+id/Boton2"
         android:layout_width="83dp"
         android:layout_height="88dp"
         android:onClick="goTabla2"
@@ -112,7 +119,7 @@
         app:srcCompat="@drawable/mundodos" />
 
     <ImageView
-        android:id="@+id/imageView37"
+        android:id="@+id/Boton1"
         android:layout_width="83dp"
         android:layout_height="88dp"
         android:onClick="goTabla1"
