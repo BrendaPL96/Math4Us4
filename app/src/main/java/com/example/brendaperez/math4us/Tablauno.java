@@ -15,8 +15,4 @@ public class Tablauno extends AppCompatActivity {
         setContentView(R.layout.activity_tablauno);
     }
 
-    public void goNivelMulti (View view){
-        Intent objI = new Intent(Tablauno.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }

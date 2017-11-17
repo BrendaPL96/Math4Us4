@@ -19,4 +19,5 @@ public class Tablasiete extends AppCompatActivity {
         Intent objI = new Intent(Tablasiete.this, NivelMultiplicacion.class);
         startActivity(objI);
     }
+
 }

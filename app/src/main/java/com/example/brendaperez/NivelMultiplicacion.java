@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.brendaperez.math4us.NivelesTablas;
 import com.example.brendaperez.math4us.R;
 import com.example.brendaperez.math4us.Tablacinco;
 import com.example.brendaperez.math4us.Tablacuatro;
@@ -67,6 +68,11 @@ public class NivelMultiplicacion extends AppCompatActivity {
 
     public void goTabla9 (View view){
         Intent objI = new Intent(NivelMultiplicacion.this, Tablanueve.class);
+        startActivity(objI);
+    }
+
+    public void goNivelesMulti (View view){
+        Intent objI = new Intent(NivelMultiplicacion.this, NivelesTablas.class);
         startActivity(objI);
     }
 }
