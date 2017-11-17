@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Registro de usuario"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+        />
 
     <EditText
         android:id="@+id/nuevoNombre"
