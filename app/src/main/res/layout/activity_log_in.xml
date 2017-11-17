@@ -8,26 +8,39 @@
     tools:context="com.example.brendaperez.math4us.Log_in"
     android:weightSum="1">
 
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="287dp"
-        android:layout_height="343dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"
-        />
+        android:src="@mipmap/ic_launcher" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
     <EditText
         android:id="@+id/user"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="INTRODUCE TU USUARIO"
+        android:hint="  INTRODUCE TU USUARIO  "
         android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:layout_gravity="center"
         />
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="INTRODUCE TU CONTRASEÑA"
+        android:hint="  INTRODUCE TU CONTRASEÑA  "
         android:inputType="textPassword"
+        android:layout_gravity="center"
         />
     <Button
         android:id="@+id/entrar"
@@ -37,6 +50,10 @@
         android:onClick="goCategorias"
         android:layout_gravity="center"
         />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
     <TextView
         android:id="@+id/registrar"
         android:layout_width="wrap_content"

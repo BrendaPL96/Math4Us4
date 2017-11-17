@@ -7,26 +7,42 @@
     android:orientation="vertical"
     tools:context="com.example.brendaperez.math4us.Registro">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registro de usuario"
         android:layout_gravity="center"
-        android:textSize="25sp"
-        />
+        android:text="Registro de usuario"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+
     <EditText
         android:id="@+id/nuevoNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:hint="Tu nombre"
-        android:inputType="text"
-        />
+        android:inputType="text" />
     <EditText
         android:id="@+id/nuevoUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Usuario"
         android:inputType="text"
+        android:layout_gravity="center"
         />
     <EditText
         android:id="@+id/contraseña"
@@ -34,7 +50,11 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:layout_gravity="center"
         />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
     <Button
         android:id="@+id/registrarse"
         android:layout_width="wrap_content"
