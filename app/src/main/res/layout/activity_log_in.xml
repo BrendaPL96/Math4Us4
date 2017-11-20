@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondologin"
     android:orientation="vertical"
-    tools:context="com.example.brendaperez.math4us.Log_in"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="com.example.brendaperez.math4us.Log_in">
 
 
     <Space
@@ -22,45 +23,53 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="24dp" />
+        android:layout_height="14dp" />
 
     <EditText
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:hint="  INTRODUCE TU USUARIO  "
         android:inputType="text"
         android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:layout_gravity="center"
-        />
+        android:singleLine="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="  INTRODUCE TU CONTRASEÑA  "
-        android:inputType="textPassword"
         android:layout_gravity="center"
-        />
+        android:hint="  INTRODUCE TU CONTRASEÑA  "
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
     <Button
         android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ENTRAR"
-        android:onClick="goCategorias"
         android:layout_gravity="center"
-        />
+        android:background="@color/colorAccent"
+        android:onClick="goCategorias"
+        android:text="ENTRAR" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="24dp" />
+        android:layout_height="18dp" />
+
     <TextView
         android:id="@+id/registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿No tienes cuenta? Registrate!"
         android:layout_gravity="center"
-        android:textSize="17sp"
-        />
+        android:text="¿No tienes cuenta? Registrate!"
+        android:textSize="17sp" />
 
 </LinearLayout>
