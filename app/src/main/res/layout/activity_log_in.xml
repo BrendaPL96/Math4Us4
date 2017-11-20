@@ -69,7 +69,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/colorPrimaryDark"
         android:text="¿No tienes cuenta? Registrate!"
         android:textColor="@color/colorAccent"
         android:textSize="17sp" />
