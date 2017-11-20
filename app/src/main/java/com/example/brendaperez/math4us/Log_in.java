@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
 import com.example.brendaperez.Categorias;
 
 import org.json.JSONException;
@@ -38,6 +40,7 @@ public class Log_in extends AppCompatActivity {
 
         btn_log.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+
                 final String username = et_usuario.getText().toString();
                 final String password = et_password.getText().toString();
 
@@ -56,7 +59,7 @@ public class Log_in extends AppCompatActivity {
 
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Log_in.this);
-                                builder.setMessage("Error de inicio de sesión").setNegativeButton("Retry", null).create().show();
+                                builder.setMessage("Error de inicio de sesión :(").setNegativeButton("Intentar de nuevo", null).create().show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -65,7 +68,8 @@ public class Log_in extends AppCompatActivity {
                 };
 
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
-
+                RequestQueue queue = Volley.newRequestQueue(Log_in.this);
+                queue.add(loginRequest);
             }
         });
     }

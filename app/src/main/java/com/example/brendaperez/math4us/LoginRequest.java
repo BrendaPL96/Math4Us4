@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest{
 
-    public static final String LOGIN_REQUEST_URL = "http://192.168.1.85/Login.php";
+    public static final String LOGIN_REQUEST_URL = "http://xtechmx.tk/math4us/Login.php";
 
     private Map<String,String> params;
 
