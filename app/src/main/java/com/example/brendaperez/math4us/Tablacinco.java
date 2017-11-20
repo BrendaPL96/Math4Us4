@@ -14,9 +14,4 @@ public class Tablacinco extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tablacinco);
     }
-
-    public void goNivelMulti5 (View view){
-        Intent objI = new Intent(Tablacinco.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }

@@ -15,8 +15,4 @@ public class Tablatres extends AppCompatActivity {
         setContentView(R.layout.activity_tablatres);
     }
 
-    public void goNivelMulti3 (View view){
-        Intent objI = new Intent(Tablatres.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }

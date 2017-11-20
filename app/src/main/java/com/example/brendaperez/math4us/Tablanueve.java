@@ -15,8 +15,4 @@ public class Tablanueve extends AppCompatActivity {
         setContentView(R.layout.activity_tablanueve);
     }
 
-    public void goNivelMulti9 (View view){
-        Intent objI = new Intent(Tablanueve.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }

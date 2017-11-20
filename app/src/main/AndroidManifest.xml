@@ -57,7 +57,8 @@
         <activity android:name=".Tablaseis" />
         <activity android:name=".Tablasiete" />
         <activity android:name=".Tablaocho" />
-        <activity android:name=".Tablanueve"></activity>
+        <activity android:name=".Tablanueve" />
+        <activity android:name=".NivelesTablas"></activity>
     </application>
 
 </manifest>

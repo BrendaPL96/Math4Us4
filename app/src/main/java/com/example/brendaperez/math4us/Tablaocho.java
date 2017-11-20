@@ -15,8 +15,4 @@ public class Tablaocho extends AppCompatActivity {
         setContentView(R.layout.activity_tablaocho);
     }
 
-    public void goNivelMulti8 (View view){
-        Intent objI = new Intent(Tablaocho.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }

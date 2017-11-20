@@ -15,8 +15,4 @@ public class Tablados extends AppCompatActivity {
         setContentView(R.layout.activity_tablados);
     }
 
-    public void goNivelMulti2 (View view) {
-        Intent objI = new Intent(Tablados.this, NivelMultiplicacion.class);
-        startActivity(objI);
-    }
 }
