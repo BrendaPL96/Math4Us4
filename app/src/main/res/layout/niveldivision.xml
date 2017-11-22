@@ -70,6 +70,7 @@
         android:id="@+id/imageView52"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goDivi1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -117,13 +118,13 @@
         android:id="@+id/imageView3"
         android:layout_width="83dp"
         android:layout_height="88dp"
-        app:srcCompat="@drawable/mundo"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/imageView43"

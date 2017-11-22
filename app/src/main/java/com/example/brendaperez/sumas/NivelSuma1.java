@@ -10,6 +10,5 @@ public class NivelSuma1 extends NivelSuma {
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_nivel_suma_1);
         super.onCreate(savedInstanceState);
-
     }
 }
