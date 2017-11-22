@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.brendaperez.math4us">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -46,6 +47,19 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta5" />
         <activity android:name="com.example.brendaperez.restas.NivelResta6" />
         <activity android:name="com.example.brendaperez.divisiones.NivelDivi1"></activity>
+        <activity android:name="com.example.brendaperez.restas.NivelResta7" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta8" />
+        <activity android:name="com.example.brendaperez.restas.NivelResta9" />
+        <activity android:name=".Tablauno" />
+        <activity android:name=".Tablados" />
+        <activity android:name=".Tablatres" />
+        <activity android:name=".Tablacuatro" />
+        <activity android:name=".Tablacinco" />
+        <activity android:name=".Tablaseis" />
+        <activity android:name=".Tablasiete" />
+        <activity android:name=".Tablaocho" />
+        <activity android:name=".Tablanueve" />
+        <activity android:name=".NivelesTablas"></activity>
     </application>
 
 </manifest>
