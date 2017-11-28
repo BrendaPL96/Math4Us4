@@ -1,8 +1,8 @@
 package com.example.brendaperez;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.brendaperez.math4us.R;
@@ -21,7 +21,7 @@ public class MultiplicacionyDivision extends AppCompatActivity {
     }
 
     public void goDivision (View view){
-        Intent objI = new Intent(MultiplicacionyDivision.this,NivelDivision.class);
+        Intent objI = new Intent(MultiplicacionyDivision.this, SelectNivelDivision.class);
         startActivity(objI);
     }
 }

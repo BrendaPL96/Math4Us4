@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-public class NivelDivi1 extends AppCompatActivity {
+public class NivelDivi extends AppCompatActivity {
 
     // attributes
     int question = 0; // TO INCREEMENT IF ONCLICK IS TRUE

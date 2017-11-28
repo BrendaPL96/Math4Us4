@@ -36,7 +36,7 @@
         <activity android:name="com.example.brendaperez.sumas.NivelSuma9" />
         <activity android:name="com.example.brendaperez.FraccionesyExtra" />
         <activity android:name="com.example.brendaperez.MultiplicacionyDivision" />
-        <activity android:name="com.example.brendaperez.NivelDivision" />
+        <activity android:name="com.example.brendaperez.SelectNivelDivision" />
         <activity android:name="com.example.brendaperez.SelectNivelResta" />
         <activity android:name="com.example.brendaperez.NivelExtra" />
         <activity android:name="com.example.brendaperez.restas.NivelResta" />
@@ -46,7 +46,7 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta4" />
         <activity android:name="com.example.brendaperez.restas.NivelResta5" />
         <activity android:name="com.example.brendaperez.restas.NivelResta6" />
-        <activity android:name="com.example.brendaperez.divisiones.NivelDivi1"></activity>
+        <activity android:name="com.example.brendaperez.divisiones.NivelDivi"></activity>
         <activity android:name="com.example.brendaperez.restas.NivelResta7" />
         <activity android:name="com.example.brendaperez.restas.NivelResta8" />
         <activity android:name="com.example.brendaperez.restas.NivelResta9" />
