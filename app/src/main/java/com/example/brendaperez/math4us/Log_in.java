@@ -54,7 +54,7 @@ public class Log_in extends AppCompatActivity {
                             if (success) {
 
                                 //String name = jsonResponse.getString("name");
-                                Intent intent = new Intent(Log_in.this, Categorias.class);
+                                Intent intent = new Intent(Log_in.this, MenuPrincipal.class);
                                 Log_in.this.startActivity(intent);
 
                             } else {
@@ -73,8 +73,8 @@ public class Log_in extends AppCompatActivity {
             }
         });
     }
-    public void goCategorias (View view){
-        Intent objI = new Intent(Log_in.this, Categorias.class);
+    public void goMenuPrincipal (View view){
+        Intent objI = new Intent(Log_in.this, MenuPrincipal.class);
         startActivity(objI);
     }
 

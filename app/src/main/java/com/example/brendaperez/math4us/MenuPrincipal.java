@@ -15,8 +15,18 @@ public class MenuPrincipal extends AppCompatActivity {
         setContentView(R.layout.menuprincipal);
     }
 
-    public void cambio (View view) {
+    public void goCategorias (View view) {
         Intent objI = new Intent(MenuPrincipal.this,Categorias.class);
+        startActivity(objI);
+    }
+
+    public void goLogin (View view){
+        Intent objI = new Intent(MenuPrincipal.this, Log_in.class);
+        startActivity(objI);
+    }
+
+    public  void  goDerechos (View view){
+        Intent objI = new Intent(MenuPrincipal.this, Derechos.class);
         startActivity(objI);
     }
 

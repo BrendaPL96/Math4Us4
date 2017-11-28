@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/colorAccent"
-        android:onClick="goCategorias"
+        android:onClick="goMenuPrincipal"
         android:text="ENTRAR" />
 
     <Space

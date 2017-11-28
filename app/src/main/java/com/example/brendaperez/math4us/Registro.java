@@ -52,7 +52,7 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
                     if(success){
-                        Intent intent = new Intent(Registro.this, Categorias.class);
+                        Intent intent = new Intent(Registro.this, MenuPrincipal.class);
                         Registro.this.startActivity(intent);
                     }else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
