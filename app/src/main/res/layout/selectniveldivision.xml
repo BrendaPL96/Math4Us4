@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brendaperez.NivelDivision">
+    tools:context="com.example.brendaperez.SelectNivelDivision">
 
     <ImageView
-        android:id="@+id/imageView47"
+        android:id="@+id/globomedio"
         android:layout_width="125dp"
         android:layout_height="126dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
-        android:id="@+id/imageView49"
+        android:id="@+id/globodificil"
         android:layout_width="122dp"
         android:layout_height="122dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,9 +31,10 @@
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
-        android:id="@+id/imageView45"
+        android:id="@+id/globofacil"
         android:layout_width="123dp"
         android:layout_height="122dp"
+        android:onClick="goNivelDiviFacil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -64,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toEndOf="@+id/imageView45"
+        app:layout_constraintStart_toEndOf="@+id/globofacil"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.867" />
 
@@ -79,7 +80,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toEndOf="@+id/imageView45"
+        app:layout_constraintStart_toEndOf="@+id/globofacil"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.549" />
 
@@ -87,6 +88,7 @@
         android:id="@+id/textView6"
         android:layout_width="164dp"
         android:layout_height="67dp"
+        android:onClick="goNivelDiviFacil"
         android:text="Fácil"
         android:textColor="@android:color/background_dark"
         android:textSize="50sp"
@@ -94,7 +96,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
-        app:layout_constraintStart_toEndOf="@+id/imageView45"
+        app:layout_constraintStart_toEndOf="@+id/globofacil"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.252" />
 

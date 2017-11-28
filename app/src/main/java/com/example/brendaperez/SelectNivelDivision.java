@@ -16,7 +16,7 @@ public class SelectNivelDivision extends AppCompatActivity {
         setContentView(R.layout.selectniveldivision);
     }
 
-    public void goDivi1(View view) {
+    public void goNivelDiviFacil(View view) {
 
         Intent objI = new Intent(SelectNivelDivision.this, NivelDivi.class);
         startActivity(objI);
