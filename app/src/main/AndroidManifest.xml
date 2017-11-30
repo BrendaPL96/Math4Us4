@@ -49,6 +49,7 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta6" />
         <activity android:name="com.example.brendaperez.divisiones.NivelDivi" />
         <activity android:name="com.example.brendaperez.divisiones.NivelDiviFacil" />
+        <activity android:name="com.example.brendaperez.divisiones.NivelDiviMedio" />
         <activity android:name="com.example.brendaperez.restas.NivelResta7" />
         <activity android:name="com.example.brendaperez.restas.NivelResta8" />
         <activity android:name="com.example.brendaperez.restas.NivelResta9" />

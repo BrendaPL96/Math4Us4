@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.brendaperez.divisiones.NivelDivi;
+import com.example.brendaperez.divisiones.NivelDiviFacil;
+import com.example.brendaperez.divisiones.NivelDiviMedio;
 import com.example.brendaperez.math4us.R;
 
 public class SelectNivelDivision extends AppCompatActivity {
@@ -18,7 +19,13 @@ public class SelectNivelDivision extends AppCompatActivity {
 
     public void goNivelDiviFacil(View view) {
 
-        Intent objI = new Intent(SelectNivelDivision.this, NivelDivi.class);
+        Intent objI = new Intent(SelectNivelDivision.this, NivelDiviFacil.class);
+        startActivity(objI);
+    }
+
+    public void goNivelDiviMedio(View view) {
+
+        Intent objI = new Intent(SelectNivelDivision.this, NivelDiviMedio.class);
         startActivity(objI);
     }
 }

@@ -3,7 +3,7 @@ package com.example.brendaperez.divisiones;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Gravity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -25,8 +25,8 @@ public class NivelDivi extends AppCompatActivity {
     // generating the exercises
     int randomintleft;
     int randomintright;
-    int min = 1;
-    int max = 20;
+    int min;
+    int max;
     Map<TextView, List<Object>> errors = new HashMap<TextView, List<Object>>();
     List<Integer> numbersLeft = new ArrayList<>();
     List<Integer> numbersRight = new ArrayList<>();
@@ -35,6 +35,7 @@ public class NivelDivi extends AppCompatActivity {
     TextView numberRight;
     TextView divide;
     TextView equals;
+    TextView bravo;
     TextView answer1;
     TextView answer2;
     TextView answer3;
@@ -51,10 +52,12 @@ public class NivelDivi extends AppCompatActivity {
 
         for (int i = 0; i < 9; i++) { // 9 times for the 9 questions
             do {
-                randomintleft = getRandomNumber(min, max); // generate an int between 1 and 20
-                randomintright = getRandomNumber(min, randomintleft); // generate another int
+                randomintleft = getRandomNumber(min, max); // generate an int between min and max
+                randomintright = getRandomNumber(1, randomintleft); // generate another int
             }
-            while ((randomintleft % randomintright != 0) || (Collections.frequency(answers, randomintleft / randomintright)) > 2);
+            while ((randomintleft % randomintright != 0) || (Collections.frequency(answers, randomintleft / randomintright)) > 0);
+            Log.d("RESULT WHILE AFTER", (Integer.toString(Collections.frequency(answers, randomintleft / randomintright))));
+            Log.d("RESULT GONNA BE ADD", Integer.toString(randomintleft / randomintright));
             numbersLeft.add(randomintleft); // put it on the first pos of the list
             numbersRight.add(randomintright); // then put it in the list
             answers.add(i, numbersLeft.get(i) / numbersRight.get(i));
@@ -69,7 +72,7 @@ public class NivelDivi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel_divi1);
+        //setContentView(R.layout.activity_nivel_divi1);
         generateNumbers();
         numberLeft = findViewById(R.id.numberLeft);
         numberRight = findViewById(R.id.numberRight);
@@ -84,6 +87,7 @@ public class NivelDivi extends AppCompatActivity {
         answer9 = findViewById(R.id.answer9);
         divide = findViewById(R.id.dividedBy);
         equals = findViewById(R.id.equals);
+        bravo = findViewById(R.id.bravo);
         generateQuestion();
         generateAnswers();
     }
@@ -145,12 +149,18 @@ public class NivelDivi extends AppCompatActivity {
         } else {
             t.setText("");
             t.setBackgroundResource(R.drawable.worldmap);
-            numberLeft.setText("");
-            numberRight.setText("");
-            equals.setText("");
-            divide.setTextSize(20);
-            divide.setGravity(Gravity.CENTER);
-            divide.setText(R.string.bravoDiviMap);
+            numberLeft.setVisibility(View.GONE);
+            divide.setVisibility(View.GONE);
+            numberRight.setVisibility(View.GONE);
+            equals.setVisibility(View.GONE);
+            bravo.setTextSize(22);
+            bravo.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            bravo.setText(R.string.bravoDiviMap);
         }
+    }
+
+    public void setMinMax(int min, int max) {
+        this.min = min;
+        this.max = max;
     }
 }
