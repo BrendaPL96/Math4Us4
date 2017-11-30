@@ -7,7 +7,7 @@
     android:background="@drawable/fondo4"
     tools:context="com.example.brendaperez.Categorias">
 
-<!--
+    <!--
    <ImageView
         android:layout_width="396dp"
         android:layout_height="514dp"
@@ -18,55 +18,57 @@
 -->
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="334dp"
-        android:layout_height="86dp"
+        android:id="@+id/observ"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="32dp"
         android:background="@android:color/holo_blue_light"
         android:onClick="goSumasRestas"
         android:text="Observadores"
         android:textColor="@android:color/white"
         android:textSize="40sp"
         android:textStyle="normal|bold"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/explo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.598" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/explo"
         android:layout_width="340dp"
-        android:layout_height="85dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/holo_orange_dark"
+        android:onClick="goMultiDiv"
         android:text="Exploradores"
+        android:textColor="@android:color/white"
         android:textSize="40sp"
         android:textStyle="normal|bold"
-        android:textColor="@android:color/white"
-        android:onClick="goMultiDiv"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48"
-        app:layout_constraintHorizontal_bias="0.507" />
+        app:layout_constraintBottom_toTopOf="@+id/astro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observ" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="342dp"
-        android:layout_height="83dp"
+        android:id="@+id/astro"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/holo_green_light"
+        android:onClick="goFraccExtra"
         android:text="Astronautas"
+        android:textColor="@android:color/white"
         android:textSize="40sp"
         android:textStyle="normal|bold"
-        android:textColor="@android:color/white"
-        android:onClick="goFraccExtra"
-        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776"
-        tools:layout_editor_absoluteX="40dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explo" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -207,26 +208,35 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/bravo"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/bravoSum"
-        android:textAlignment="center"
-        android:textColor="#7fde20"
-        android:textSize="30sp"
-        android:visibility="gone" />
+        android:layout_weight="0.1">
 
-    <ImageView
-        android:id="@+id/question"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_weight="0.5"
-        android:contentDescription="@string/question"
-        android:src="@drawable/question"
-        android:visibility="visible" />
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="72dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/plus"
+            android:src="@drawable/thumbup"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/bravo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:text="@string/bravoSum"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/thumb"
+            tools:layout_editor_absoluteY="6dp" />
+    </android.support.constraint.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

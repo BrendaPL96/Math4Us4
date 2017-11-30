@@ -72,7 +72,7 @@ public class NivelDivi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_nivel_divi1);
+        //setContentView(R.layout.activity_nivel_divi_1);
         generateNumbers();
         numberLeft = findViewById(R.id.numberLeft);
         numberRight = findViewById(R.id.numberRight);

@@ -28,4 +28,8 @@ public class SelectNivelDivision extends AppCompatActivity {
         Intent objI = new Intent(SelectNivelDivision.this, NivelDiviMedio.class);
         startActivity(objI);
     }
+
+    public void goNivelDiviDificil(View v) {
+
+    }
 }
