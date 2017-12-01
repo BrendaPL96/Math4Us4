@@ -25,6 +25,8 @@
         <activity android:name="com.example.brendaperez.SumasyRestas" />
         <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
         <activity android:name="com.example.brendaperez.SelectNivelSumas" />
+        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi" />
+        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_1" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma1" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma2" />

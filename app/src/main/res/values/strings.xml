@@ -4,8 +4,8 @@
 
     <string name="bravoSum">¡Muy bien, %1$d + %2$d = %3$d!</string>
     <string name="bravoRest">¡Muy bien, %1$d - %2$d = %3$d!</string>
-    <string name="bravoDiviMap">¡Felicidades!\n Encontraste todos los mapas!</string>
-
+    <string name="bravoDiviMap">¡Felicidades!\n¡Encontraste todos los mapas!</string>
+    <string name="operation">%1$d %2$s %3$d %4$s %5$d = </string>
 
     <string name="bee">abeja</string>
     <string name="octopus">octopus</string>
