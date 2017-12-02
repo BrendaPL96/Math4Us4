@@ -25,4 +25,39 @@ public class NivelesTablas extends AppCompatActivity {
         startActivity(objI);
     }
 
+    public void goNivelMulti3 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip3.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti4 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip4.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti5 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip5.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti6 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip6.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti7 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip7.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti8 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip8.class);
+        startActivity(objI);
+    }
+
+    public void goNivelMulti9 (View view){
+        Intent objI = new Intent(NivelesTablas.this, NivelMultip9.class);
+        startActivity(objI);
+    }
+
 }

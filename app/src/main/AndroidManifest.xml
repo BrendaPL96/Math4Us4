@@ -69,6 +69,13 @@
         <activity android:name="com.example.brendaperez.multip.NivelMultip1" />
         <activity android:name="com.example.brendaperez.multip.NivelMultip" />
         <activity android:name="com.example.brendaperez.multip.NivelMultip2" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip3" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip4" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip5" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip6" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip7" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip8" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip9" />
         <activity android:name=".Derechos" />
     </application>
 
