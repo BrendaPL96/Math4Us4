@@ -66,7 +66,7 @@ public class Registro extends AppCompatActivity {
                     queue.add(registerRequest);
                 }else{
                     AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
-                    builder.setMessage("Ingresa tus datos").setNegativeButton("Intentar de nuevo", null).create().show();
+                    builder.setMessage("REVISA TUS DATOS").setNegativeButton("Intentar de nuevo", null).create().show();
                 }
             }
         });

@@ -62,7 +62,7 @@ public class Log_in extends AppCompatActivity {
 
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Log_in.this);
-                                builder.setMessage("Error de inicio de sesión :(").setNegativeButton("Intentar de nuevo", null).create().show();
+                                builder.setMessage("ERROR AL INICIAR SESIÓN :(").setNegativeButton("Intentar de nuevo", null).create().show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
