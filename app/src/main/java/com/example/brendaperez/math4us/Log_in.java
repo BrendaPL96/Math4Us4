@@ -30,6 +30,7 @@ public class Log_in extends AppCompatActivity {
         et_usuario = findViewById(R.id.user);
         et_password = findViewById(R.id.password);
         btn_log = (Button) findViewById(R.id.entrar);
+
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,11 +39,13 @@ public class Log_in extends AppCompatActivity {
             }
         });
 
+
         btn_log.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
                 final String username = et_usuario.getText().toString();
                 final String password = et_password.getText().toString();
+                System.out.println(username + " " + password);
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -73,10 +76,4 @@ public class Log_in extends AppCompatActivity {
             }
         });
     }
-    public void goMenuPrincipal (View view){
-        Intent objI = new Intent(Log_in.this, MenuPrincipal.class);
-        startActivity(objI);
-    }
-
-
 }

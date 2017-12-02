@@ -17,7 +17,7 @@ import com.example.brendaperez.Categorias;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Registro extends AppCompatActivity implements View.OnClickListener {
+public class Registro extends AppCompatActivity {
 
 
     EditText nombre, usuario, contraseña;
@@ -34,38 +34,41 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         contraseña = (EditText) findViewById(R.id.contraseña);
 
         btn_registrar = (Button) findViewById(R.id.registrarse);
-        btn_registrar.setOnClickListener(this);
 
-    }
+        btn_registrar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                final String username = usuario.getText().toString();
+                final String name = nombre.getText().toString();
+                final String pass = contraseña.getText().toString();
 
+                if(!username.isEmpty() && !name.isEmpty() && !pass.isEmpty()) {
+                    Response.Listener<String> respoListener = new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            try {
+                                JSONObject jsonResponse = new JSONObject(response);
+                                boolean success = jsonResponse.getBoolean("success");
+                                if (success) {
+                                    Intent intent = new Intent(Registro.this, MenuPrincipal.class);
+                                    Registro.this.startActivity(intent);
+                                } else {
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
+                                    builder.setMessage("Error de Registro").setNegativeButton("Retry", null).create().show();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    };
 
-    @Override
-    public void onClick(View v) {
-        final String username = usuario.getText().toString();
-        final String name = nombre.getText().toString();
-        final String pass = contraseña.getText().toString();
-
-        Response.Listener<String> respoListener = new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject jsonResponse = new JSONObject(response);
-                    boolean success = jsonResponse.getBoolean("success");
-                    if(success){
-                        Intent intent = new Intent(Registro.this, MenuPrincipal.class);
-                        Registro.this.startActivity(intent);
-                    }else{
-                        AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
-                        builder.setMessage("Error de Registro").setNegativeButton("Retry",null).create().show();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                    RegisterRequest registerRequest = new RegisterRequest(username, name, pass, respoListener);
+                    RequestQueue queue = Volley.newRequestQueue(Registro.this);
+                    queue.add(registerRequest);
+                }else{
+                    AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
+                    builder.setMessage("Ingresa tus datos").setNegativeButton("Intentar de nuevo", null).create().show();
                 }
             }
-        };
-
-        RegisterRequest registerRequest = new RegisterRequest(username, name, pass, respoListener);
-        RequestQueue queue = Volley.newRequestQueue(Registro.this);
-        queue.add(registerRequest);
+        });
     }
 }

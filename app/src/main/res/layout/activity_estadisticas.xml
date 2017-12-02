@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondologin"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.brendaperez.math4us.Estadisticas">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Estas son tus estadísticas:"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:textAlignment="center"
+        android:text="Nombre:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Puntaje:"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="Vas en el nivel:"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        />
+</LinearLayout>
