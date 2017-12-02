@@ -117,6 +117,7 @@
         android:id="@+id/imageView53"
         android:layout_width="101dp"
         android:layout_height="131dp"
+        android:onClick="goToNiv1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.brendaperez.divisiones.NivelDivi">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/calculo"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@id/answers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/ope"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:text="Here will go the operation"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bravo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/answers"
+        android:layout_width="match_parent"
+        android:layout_height="442dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculo">
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/flagaustralia"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="1"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer4"
+            app:layout_constraintEnd_toStartOf="@+id/answer2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/flagcolombia"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="2"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer5"
+            app:layout_constraintEnd_toStartOf="@+id/answer3"
+            app:layout_constraintStart_toEndOf="@+id/answer1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/answer3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/flagfrance"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="3"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/answer2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/answer4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flaggreece"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="4"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer7"
+            app:layout_constraintEnd_toStartOf="@+id/answer5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer1" />
+
+        <TextView
+            android:id="@+id/answer5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flagindia"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="5"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer8"
+            app:layout_constraintEnd_toStartOf="@+id/answer6"
+            app:layout_constraintStart_toEndOf="@+id/answer4"
+            app:layout_constraintTop_toBottomOf="@+id/answer2" />
+
+        <TextView
+            android:id="@+id/answer6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flagmexico"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="6"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/answer9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/answer5"
+            app:layout_constraintTop_toBottomOf="@+id/answer3" />
+
+        <TextView
+            android:id="@+id/answer7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="71dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flagnicaragua"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="7"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/answer8"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/answer4" />
+
+        <TextView
+            android:id="@+id/answer8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="71dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flagspain"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="8"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/answer9"
+            app:layout_constraintStart_toEndOf="@+id/answer7"
+            app:layout_constraintTop_toBottomOf="@+id/answer5" />
+
+        <TextView
+            android:id="@+id/answer9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="71dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/flagukraine"
+            android:gravity="center_vertical|center"
+            android:onClick="onClick"
+            android:text="9"
+            android:textAlignment="gravity"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/answer8"
+            app:layout_constraintTop_toBottomOf="@+id/answer6" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
