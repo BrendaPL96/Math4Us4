@@ -45,7 +45,6 @@ public class Log_in extends AppCompatActivity {
 
                 final String username = et_usuario.getText().toString();
                 final String password = et_password.getText().toString();
-                System.out.println(username + " " + password);
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
@@ -56,9 +55,23 @@ public class Log_in extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
 
-                                //String name = jsonResponse.getString("name");
+                                String user = jsonResponse.getString("username");
+                                String name = jsonResponse.getString("name");
+                                String pass = jsonResponse.getString("password");
+                                String level = jsonResponse.getString("level");
+                                String score = jsonResponse.getString("score");
+
                                 Intent intent = new Intent(Log_in.this, MenuPrincipal.class);
+
+
+
+                                Intent est = new Intent(Log_in.this, Estadisticas.class);
+                                est.putExtra("nombre", name);
+                                est.putExtra("nivel", level);
+                                est.putExtra("puntaje", score);
+                                //Log_in.this.startActivity(est);
                                 Log_in.this.startActivity(intent);
+
 
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Log_in.this);
