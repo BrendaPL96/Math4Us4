@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.brendaperez.multip.NivelMultip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+        <ImageView
+            android:id="@+id/digitLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="2"
+            android:src="@drawable/dos" />
+
+        <ImageView
+            android:id="@+id/mult1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="5"
+            android:src="@drawable/multiplica" />
+
+        <ImageView
+            android:id="@+id/digitRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="3"
+            android:src="@drawable/tres" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/leftMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.multip.NivelMultip">
+
+            <ImageView
+                android:id="@+id/octopus6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginVertical="50dp"
+                android:src="@drawable/persona" />
+
+
+            <ImageView
+                android:id="@+id/octopus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginVertical="20dp"
+                android:src="@drawable/persona" />
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/flech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.multip.NivelMultip">
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginVertical="50dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/flecha"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/flec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/flecha"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rightMult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.multip.NivelMultip">
+
+            <ImageView
+                android:id="@+id/octopus4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/cperas" />
+
+            <ImageView
+                android:id="@+id/octopus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/cperas" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+        <ImageView
+            android:id="@+id/leftAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="5"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/five" />
+
+        <ImageView
+            android:id="@+id/centerAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="6"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/six" />
+
+        <ImageView
+            android:id="@+id/rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="8"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/eight" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

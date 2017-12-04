@@ -30,6 +30,7 @@ public class Log_in extends AppCompatActivity {
         et_usuario = findViewById(R.id.user);
         et_password = findViewById(R.id.password);
         btn_log = (Button) findViewById(R.id.entrar);
+
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +38,7 @@ public class Log_in extends AppCompatActivity {
                 Log_in.this.startActivity(intento);
             }
         });
+
 
         btn_log.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -53,13 +55,27 @@ public class Log_in extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
                             if (success) {
 
-                                //String name = jsonResponse.getString("name");
+                                String user = jsonResponse.getString("username");
+                                String name = jsonResponse.getString("name");
+                                String pass = jsonResponse.getString("password");
+                                String level = jsonResponse.getString("level");
+                                String score = jsonResponse.getString("score");
+
                                 Intent intent = new Intent(Log_in.this, MenuPrincipal.class);
+
+
+
+                                Intent est = new Intent(Log_in.this, Estadisticas.class);
+                                est.putExtra("nombre", name);
+                                est.putExtra("nivel", level);
+                                est.putExtra("puntaje", score);
+                                //Log_in.this.startActivity(est);
                                 Log_in.this.startActivity(intent);
+
 
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(Log_in.this);
-                                builder.setMessage("Error de inicio de sesión :(").setNegativeButton("Intentar de nuevo", null).create().show();
+                                builder.setMessage("ERROR AL INICIAR SESIÓN :(").setNegativeButton("Intentar de nuevo", null).create().show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -73,10 +89,4 @@ public class Log_in extends AppCompatActivity {
             }
         });
     }
-    public void goMenuPrincipal (View view){
-        Intent objI = new Intent(Log_in.this, MenuPrincipal.class);
-        startActivity(objI);
-    }
-
-
 }

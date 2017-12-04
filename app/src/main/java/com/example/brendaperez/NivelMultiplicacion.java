@@ -5,18 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.brendaperez.math4us.NivelesTablas;
+import com.example.brendaperez.multip.NivelesTablas;
 import com.example.brendaperez.math4us.R;
-import com.example.brendaperez.math4us.Tablacinco;
-import com.example.brendaperez.math4us.Tablacuatro;
-import com.example.brendaperez.math4us.Tablados;
-import com.example.brendaperez.math4us.Tablanueve;
-import com.example.brendaperez.math4us.Tablaocho;
-import com.example.brendaperez.math4us.Tablaseis;
-import com.example.brendaperez.math4us.Tablasiete;
-import com.example.brendaperez.math4us.Tablatres;
-import com.example.brendaperez.math4us.Tablauno;
-import com.example.brendaperez.sumas.NivelSuma4;
+import com.example.brendaperez.multip.Tablacinco;
+import com.example.brendaperez.multip.Tablacuatro;
+import com.example.brendaperez.multip.Tablados;
+import com.example.brendaperez.multip.Tablanueve;
+import com.example.brendaperez.multip.Tablaocho;
+import com.example.brendaperez.multip.Tablaseis;
+import com.example.brendaperez.multip.Tablasiete;
+import com.example.brendaperez.multip.Tablatres;
+import com.example.brendaperez.multip.Tablauno;
 
 public class NivelMultiplicacion extends AppCompatActivity {
 

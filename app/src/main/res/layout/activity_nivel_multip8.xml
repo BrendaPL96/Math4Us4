@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.brendaperez.multip.NivelMultip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+        <ImageView
+            android:id="@+id/digitLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="4"
+            android:src="@drawable/cuatroama" />
+
+        <ImageView
+            android:id="@+id/mult1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="5"
+            android:src="@drawable/multiplica" />
+
+        <ImageView
+            android:id="@+id/digitRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="7"
+            android:src="@drawable/sietenara" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="377dp"
+
+        android:layout_weight="1"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/rightMult"
+            android:layout_width="148dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical"
+            tools:context="com.example.brendaperez.multip.NivelMultip">
+
+            <ImageView
+                android:id="@+id/octopus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/zanahoria" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        tools:context="com.example.brendaperez.multip.NivelMultip">
+
+        <ImageView
+            android:id="@+id/leftAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="28"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/dosochoazul" />
+
+        <ImageView
+            android:id="@+id/centerAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="14"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/unocuaazul" />
+
+        <ImageView
+            android:id="@+id/rightAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="21"
+            android:onClick="onClickAnswer"
+            android:src="@drawable/dosunoazul" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

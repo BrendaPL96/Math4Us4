@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.brendaperez.math4us.NivelesTablas">
+    tools:context="com.example.brendaperez.multip.NivelesTablas">
 
     <TextView
         android:id="@+id/textView4"
@@ -21,78 +21,59 @@
         android:id="@+id/Nivel5"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
+        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel6"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416"
+        app:layout_constraintVertical_bias="0.499"
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel8"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti8"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
+        app:layout_constraintVertical_bias="0.867"
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel9"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/Nivel11"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/Nivel12"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
+        app:layout_constraintVertical_bias="0.866"
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel2"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -105,6 +86,7 @@
         android:id="@+id/Nivel3"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -117,42 +99,33 @@
         android:id="@+id/Nivel4"
         android:layout_width="83dp"
         android:layout_height="88dp"
-        app:srcCompat="@drawable/mundo"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="goNivelMulti4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel7"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti7"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673"
-        app:srcCompat="@drawable/mundo" />
-
-    <ImageView
-        android:id="@+id/Nivel10"
-        android:layout_width="83dp"
-        android:layout_height="88dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926"
+        app:layout_constraintVertical_bias="0.866"
         app:srcCompat="@drawable/mundo" />
 
     <ImageView
         android:id="@+id/Nivel1"
         android:layout_width="83dp"
         android:layout_height="88dp"
+        android:onClick="goNivelMulti1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintLeft_toLeftOf="parent"

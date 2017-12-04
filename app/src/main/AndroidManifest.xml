@@ -56,17 +56,32 @@
         <activity android:name="com.example.brendaperez.restas.NivelResta7" />
         <activity android:name="com.example.brendaperez.restas.NivelResta8" />
         <activity android:name="com.example.brendaperez.restas.NivelResta9" />
-        <activity android:name=".Tablauno" />
-        <activity android:name=".Tablados" />
-        <activity android:name=".Tablatres" />
-        <activity android:name=".Tablacuatro" />
-        <activity android:name=".Tablacinco" />
-        <activity android:name=".Tablaseis" />
-        <activity android:name=".Tablasiete" />
-        <activity android:name=".Tablaocho" />
-        <activity android:name=".Tablanueve" />
-        <activity android:name=".NivelesTablas" />
-        <activity android:name=".Derechos"></activity>
+        <activity android:name="com.example.brendaperez.multip.Tablauno" />
+        <activity android:name="com.example.brendaperez.multip.Tablados" />
+        <activity android:name="com.example.brendaperez.multip.Tablatres" />
+        <activity android:name="com.example.brendaperez.multip.Tablacuatro" />
+        <activity android:name="com.example.brendaperez.multip.Tablacinco" />
+        <activity android:name="com.example.brendaperez.multip.Tablaseis" />
+        <activity android:name="com.example.brendaperez.multip.Tablasiete" />
+        <activity android:name="com.example.brendaperez.multip.Tablaocho" />
+        <activity android:name="com.example.brendaperez.multip.Tablanueve" />
+        <activity android:name="com.example.brendaperez.multip.NivelesTablas" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip1" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip2" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip3" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip4" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip5" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip6" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip7" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip8" />
+        <activity android:name="com.example.brendaperez.multip.NivelMultip9" />
+        <activity android:name=".Derechos" />
+        <activity android:name=".Estadisticas"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

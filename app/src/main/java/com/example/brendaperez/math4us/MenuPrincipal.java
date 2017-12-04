@@ -24,6 +24,10 @@ public class MenuPrincipal extends AppCompatActivity {
         Intent objI = new Intent(MenuPrincipal.this, Log_in.class);
         startActivity(objI);
     }
+    public  void goEstadisticas (View view){
+        Intent objI = new Intent(MenuPrincipal.this, Estadisticas.class);
+        startActivity(objI);
+    }
 
     public  void  goDerechos (View view){
         Intent objI = new Intent(MenuPrincipal.this, Derechos.class);
