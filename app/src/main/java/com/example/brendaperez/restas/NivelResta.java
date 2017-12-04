@@ -21,8 +21,8 @@ public class NivelResta extends AppCompatActivity {
     int answerCenterInt;
     ImageView answerRight;
     int answerRightInt;
-    ImageView question;
     TextView bravo;
+    ImageView thumb;
     LinearLayout leftRest;
     LinearLayout rightRest;
     int digitLeft; //number of pictures on the left
@@ -40,8 +40,8 @@ public class NivelResta extends AppCompatActivity {
         answerCenterInt = Integer.parseInt((answerCenter.getContentDescription()).toString());
         answerRight = findViewById(R.id.rightAnswer);
         answerRightInt = Integer.parseInt((answerRight.getContentDescription()).toString());
-        question = findViewById(R.id.question);
         bravo = findViewById(R.id.bravo);
+        thumb = findViewById(R.id.thumb);
         leftRest = findViewById(R.id.leftRest);
         rightRest = findViewById(R.id.rightRest);
 
@@ -83,7 +83,7 @@ public class NivelResta extends AppCompatActivity {
         int id = v.getId();
         ImageView image = findViewById(id);
         if (number == countPic()) {
-            question.setVisibility(View.GONE);
+            thumb.setVisibility(View.VISIBLE);
             bravo.setVisibility(View.VISIBLE);
             image.setImageResource(R.drawable.right);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
