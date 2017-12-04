@@ -261,7 +261,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="14"
-            android:onClick="onClickAnswer"
+            android:onClick="onClickAnswerSum"
             android:src="@drawable/catorce" />
 
         <ImageView
@@ -271,7 +271,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="12"
-            android:onClick="onClickAnswer"
+            android:onClick="onClickAnswerSum"
             android:src="@drawable/doce" />
 
         <ImageView
@@ -281,7 +281,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="31"
-            android:onClick="onClickAnswer"
+            android:onClick="onClickAnswerSum"
             android:src="@drawable/treintayuno" />
 
     </LinearLayout>
