@@ -11,75 +11,201 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuPrincipal" />
-        <activity android:name=".Log_in">
+        <activity
+            android:name=".MenuPrincipal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Log_in"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registro" />
-        <activity android:name="com.example.brendaperez.Categorias" />
-        <activity android:name="com.example.brendaperez.NivelFraccion" />
-        <activity android:name="com.example.brendaperez.SumasyRestas" />
-        <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
-        <activity android:name="com.example.brendaperez.SelectNivelSumas" />
-        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi" />
-        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_1" />
-        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_2" />
-        <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_3" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma1" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma2" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma3" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma4" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma5" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma6" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma7" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma8" />
-        <activity android:name="com.example.brendaperez.sumas.NivelSuma9" />
-        <activity android:name="com.example.brendaperez.FraccionesyExtra" />
-        <activity android:name="com.example.brendaperez.MultiplicacionyDivision" />
-        <activity android:name="com.example.brendaperez.SelectNivelDivision" />
-        <activity android:name="com.example.brendaperez.SelectNivelResta" />
-        <activity android:name="com.example.brendaperez.SelectNivelExtra" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta1" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta2" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta3" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta4" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta5" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta6" />
-        <activity android:name="com.example.brendaperez.divisiones.NivelDivi" />
-        <activity android:name="com.example.brendaperez.divisiones.NivelDiviFacil" />
-        <activity android:name="com.example.brendaperez.divisiones.NivelDiviMedio" />
-        <activity android:name="com.example.brendaperez.divisiones.NivelDiviDificil" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta7" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta8" />
-        <activity android:name="com.example.brendaperez.restas.NivelResta9" />
-        <activity android:name="com.example.brendaperez.multip.Tablauno" />
-        <activity android:name="com.example.brendaperez.multip.Tablados" />
-        <activity android:name="com.example.brendaperez.multip.Tablatres" />
-        <activity android:name="com.example.brendaperez.multip.Tablacuatro" />
-        <activity android:name="com.example.brendaperez.multip.Tablacinco" />
-        <activity android:name="com.example.brendaperez.multip.Tablaseis" />
-        <activity android:name="com.example.brendaperez.multip.Tablasiete" />
-        <activity android:name="com.example.brendaperez.multip.Tablaocho" />
-        <activity android:name="com.example.brendaperez.multip.Tablanueve" />
-        <activity android:name="com.example.brendaperez.multip.NivelesTablas" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip1" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip2" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip3" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip4" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip5" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip6" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip7" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip8" />
-        <activity android:name="com.example.brendaperez.multip.NivelMultip9" />
-        <activity android:name=".Derechos" />
-        <activity android:name=".Estadisticas"></activity>
+        <activity
+            android:name=".Registro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.Categorias"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.NivelFraccion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.SumasyRestas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.NivelMultiplicacion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.SelectNivelSumas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.combinaciones.NivelCombi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.combinaciones.NivelCombi_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.combinaciones.NivelCombi_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.combinaciones.NivelCombi_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.sumas.NivelSuma9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.FraccionesyExtra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.MultiplicacionyDivision"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.SelectNivelDivision"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.SelectNivelResta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.SelectNivelExtra"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.divisiones.NivelDivi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.divisiones.NivelDiviFacil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.divisiones.NivelDiviMedio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.divisiones.NivelDiviDificil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.restas.NivelResta9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablauno"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablados"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablatres"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablacuatro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablacinco"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablaseis"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablasiete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablaocho"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.Tablanueve"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelesTablas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.brendaperez.multip.NivelMultip9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Derechos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Estadisticas"
+            android:screenOrientation="portrait"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
