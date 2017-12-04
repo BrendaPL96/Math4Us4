@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -59,8 +60,7 @@ public class Log_in extends AppCompatActivity {
                                 String score = jsonResponse.getString("score");
 
                                 Intent intent = new Intent(Log_in.this, MenuPrincipal.class);
-
-
+                                //Log.d("testuser", "onResponse: user" + user);
 
                                 Intent est = new Intent(Log_in.this, Estadisticas.class);
                                 est.putExtra("nombre", name);

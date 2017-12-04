@@ -3,6 +3,7 @@ package com.example.brendaperez.math4us;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 public class Estadisticas extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class Estadisticas extends AppCompatActivity {
         Intent intent = getIntent();
 
         String name = intent.getStringExtra("nombre");
+        //Log.d("testuserestadisitca", "onResponse: user" + name + "****");
         String score = intent.getStringExtra("nivel");
         String level = intent.getStringExtra("puntaje");
 
