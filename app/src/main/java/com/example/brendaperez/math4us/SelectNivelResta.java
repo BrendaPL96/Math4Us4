@@ -1,11 +1,10 @@
-package com.example.brendaperez;
+package com.example.brendaperez.math4us;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.brendaperez.math4us.R;
 import com.example.brendaperez.restas.NivelResta1;
 import com.example.brendaperez.restas.NivelResta2;
 import com.example.brendaperez.restas.NivelResta3;

@@ -77,7 +77,7 @@ public class NivelSuma extends AppCompatActivity {
 
     }
 
-    protected void onClickAnswer(View v) {
+    public void onClickAnswerSum(View v) {
         CharSequence numberText = v.getContentDescription(); //read the contentDescription attribute, which is the value of the image in charseq
         int number = Integer.parseInt(numberText.toString()); // convert this value in int
         int id = v.getId(); // get the id of this image
@@ -85,7 +85,6 @@ public class NivelSuma extends AppCompatActivity {
         if (number == countPic()) {
             thumb.setVisibility(View.VISIBLE);
             bravo.setVisibility(View.VISIBLE);
-
             image.setImageResource(R.drawable.right);
             if (answerLeftInt == countPic()) {
                 answerCenter.setImageResource(R.drawable.wrong);

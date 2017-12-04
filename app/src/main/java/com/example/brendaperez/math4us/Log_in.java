@@ -11,16 +11,13 @@ import android.widget.TextView;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
-import com.example.brendaperez.Categorias;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 public class Log_in extends AppCompatActivity {
 
     TextView tv_registrar, et_usuario, et_password;
     Button btn_log;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

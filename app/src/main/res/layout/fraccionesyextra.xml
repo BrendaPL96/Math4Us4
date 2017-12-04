@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo8"
-    tools:context="com.example.brendaperez.FraccionesyExtra">
+    tools:context=".FraccionesyExtra">
 
     <Button
         android:id="@+id/button3"

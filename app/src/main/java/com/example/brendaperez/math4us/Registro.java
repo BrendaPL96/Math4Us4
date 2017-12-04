@@ -10,9 +10,7 @@ import android.widget.EditText;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.brendaperez.Categorias;
 
 import org.json.JSONException;
 import org.json.JSONObject;

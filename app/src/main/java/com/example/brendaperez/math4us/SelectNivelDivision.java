@@ -1,4 +1,4 @@
-package com.example.brendaperez;
+package com.example.brendaperez.math4us;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,6 @@ import android.view.View;
 import com.example.brendaperez.divisiones.NivelDiviDificil;
 import com.example.brendaperez.divisiones.NivelDiviFacil;
 import com.example.brendaperez.divisiones.NivelDiviMedio;
-import com.example.brendaperez.math4us.R;
 
 public class SelectNivelDivision extends AppCompatActivity {
 
