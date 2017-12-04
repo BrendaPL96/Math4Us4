@@ -27,11 +27,11 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        nombre = (EditText) findViewById(R.id.nuevoNombre);
-        usuario = (EditText) findViewById(R.id.nuevoUsuario);
-        contraseña = (EditText) findViewById(R.id.contraseña);
+        nombre = findViewById(R.id.nuevoNombre);
+        usuario = findViewById(R.id.nuevoUsuario);
+        contraseña = findViewById(R.id.contraseña);
 
-        btn_registrar = (Button) findViewById(R.id.registrarse);
+        btn_registrar = findViewById(R.id.registrarse);
 
         btn_registrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

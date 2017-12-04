@@ -4,82 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NivelFraccion">
+    tools:context="com.example.brendaperez.NivelFraccion">
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
+        android:id="@+id/nivelfracc4"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207"
+        app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
+        android:id="@+id/nivelfracc7"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585"
+        app:layout_constraintVertical_bias="0.898"
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
+        android:id="@+id/nivelfracc9"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933"
+        app:layout_constraintVertical_bias="0.896"
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
+        android:id="@+id/nivelfracc1"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:onClick="goNivelFracc1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.933"
+        app:layout_constraintVertical_bias="0.19"
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
+        android:id="@+id/nivelfracc6"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583"
-        app:srcCompat="@drawable/cohete" />
-
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="139dp"
-        android:layout_height="140dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209"
+        app:layout_constraintVertical_bias="0.56"
         app:srcCompat="@drawable/cohete" />
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fracciones "
@@ -88,5 +77,51 @@
         android:textStyle="normal|bold"
         tools:layout_editor_absoluteX="6dp"
         tools:layout_editor_absoluteY="7dp" />
+
+    <ImageView
+        android:id="@+id/nivelfracc2"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:onClick="goNivelFracc2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/cohete" />
+
+    <ImageView
+        android:id="@+id/nivelfracc5"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@drawable/cohete" />
+
+    <ImageView
+        android:id="@+id/nivelfracc8"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        app:srcCompat="@drawable/cohete" />
+
+    <ImageView
+        android:id="@+id/nivelfracc3"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@drawable/cohete" />
 
 </android.support.constraint.ConstraintLayout>

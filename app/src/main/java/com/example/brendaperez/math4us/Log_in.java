@@ -27,7 +27,7 @@ public class Log_in extends AppCompatActivity {
         tv_registrar = findViewById(R.id.registrar);
         et_usuario = findViewById(R.id.user);
         et_password = findViewById(R.id.password);
-        btn_log = (Button) findViewById(R.id.entrar);
+        btn_log = findViewById(R.id.entrar);
 
         tv_registrar.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -15,7 +15,7 @@ public class Estadisticas extends AppCompatActivity {
         setContentView(R.layout.activity_estadisticas);
 
 
-        nombre = (TextView) findViewById(R.id.nombreusuario);
+        nombre = findViewById(R.id.nombreusuario);
         puntaje = findViewById(R.id.score);
         nivel =  findViewById(R.id.level);
 

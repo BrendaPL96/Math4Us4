@@ -206,6 +206,8 @@
         <activity
             android:name=".Derechos"
             android:screenOrientation="portrait" />
+        <activity android:name="com.example.brendaperez.fracc.NivelFrac" />
+        <activity android:name="com.example.brendaperez.fracc.NivelFrac1" />
         <activity
             android:name=".Estadisticas"
             android:screenOrientation="portrait"></activity>
