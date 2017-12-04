@@ -8,16 +8,45 @@
 
     <TextView
         android:id="@+id/Titulo"
-        android:layout_width="325dp"
+        android:layout_width="379dp"
         android:layout_height="108dp"
-        android:text="Derechos de Autor"
-        android:textColor="?android:attr/colorForeground"
+        android:gravity="center"
+        android:text="DERECHOS DE AUTOR"
+        android:textColor="?android:attr/colorAccent"
         android:textSize="40sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:layout_width="366dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Gracias a X-TECHNOLOGIES por la Base de Datos"
+        android:textColor="?android:attr/colorForeground"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="www.xtechmx.tk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349">
+
+    </TextView>
 </android.support.constraint.ConstraintLayout>
