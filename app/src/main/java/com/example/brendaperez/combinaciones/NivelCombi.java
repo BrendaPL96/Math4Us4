@@ -1,9 +1,13 @@
 package com.example.brendaperez.combinaciones;
 
+import android.animation.Animator;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.widget.TextView;
 
 import com.example.brendaperez.math4us.R;
@@ -271,6 +275,22 @@ public class NivelCombi extends AppCompatActivity {
         ope.setText(opeText);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    protected void animate(View v) {
+
+        // get the center for the clipping circle
+        int cx = v.getWidth() / 2;
+        int cy = v.getHeight() / 2;
+
+        // get the final radius for the clipping circle
+        float finalRadius = (float) Math.hypot(cx, cy);
+
+        // create the animator for this view (the start radius is zero)
+        Animator anim = ViewAnimationUtils.createCircularReveal(v, cx, cy, 0, finalRadius);
+        anim.start();
+
+    }
+
     public void onClick(View v) {
 
         TextView t = (TextView) v;
@@ -311,10 +331,16 @@ public class NivelCombi extends AppCompatActivity {
         } else {
             t.setText("");
             t.setBackgroundResource(R.drawable.cometa);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                animate(t);
+            }
             ope.setVisibility(View.GONE);
             bravo.setTextSize(22);
             bravo.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             bravo.setText(R.string.bravoCombiCometas);
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            animate(t);
         }
     }
 

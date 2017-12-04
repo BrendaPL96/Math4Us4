@@ -87,9 +87,6 @@ public class NivelSuma extends AppCompatActivity {
             bravo.setVisibility(View.VISIBLE);
 
             image.setImageResource(R.drawable.right);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                animate(image);
-            }
             if (answerLeftInt == countPic()) {
                 answerCenter.setImageResource(R.drawable.wrong);
                 answerCenter.setClickable(false);
@@ -112,7 +109,9 @@ public class NivelSuma extends AppCompatActivity {
         } else {
             image.setImageResource(R.drawable.wrong);
             image.setClickable(false);
-
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            animate(image);
         }
     }
 }
