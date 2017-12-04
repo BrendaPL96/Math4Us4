@@ -1,11 +1,9 @@
-package com.example.brendaperez;
+package com.example.brendaperez.math4us;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.brendaperez.math4us.R;
 
 public class Categorias extends AppCompatActivity {
 

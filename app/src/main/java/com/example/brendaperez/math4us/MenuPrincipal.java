@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.brendaperez.Categorias;
-
 public class MenuPrincipal extends AppCompatActivity {
 
     @Override

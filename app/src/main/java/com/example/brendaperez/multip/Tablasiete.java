@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.brendaperez.NivelMultiplicacion;
+import com.example.brendaperez.math4us.NivelMultiplicacion;
 import com.example.brendaperez.math4us.R;
 
 public class Tablasiete extends AppCompatActivity {

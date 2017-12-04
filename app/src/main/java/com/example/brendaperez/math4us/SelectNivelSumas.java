@@ -1,11 +1,10 @@
-package com.example.brendaperez;
+package com.example.brendaperez.math4us;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.brendaperez.math4us.R;
 import com.example.brendaperez.sumas.NivelSuma1;
 import com.example.brendaperez.sumas.NivelSuma2;
 import com.example.brendaperez.sumas.NivelSuma3;

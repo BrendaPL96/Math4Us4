@@ -9,6 +9,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,11 +23,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Registro" />
-        <activity android:name="com.example.brendaperez.Categorias" />
-        <activity android:name="com.example.brendaperez.NivelFraccion" />
-        <activity android:name="com.example.brendaperez.SumasyRestas" />
-        <activity android:name="com.example.brendaperez.NivelMultiplicacion" />
-        <activity android:name="com.example.brendaperez.SelectNivelSumas" />
+        <activity android:name=".Categorias" />
+        <activity android:name=".NivelFraccion" />
+        <activity android:name=".SumasyRestas" />
+        <activity android:name=".NivelMultiplicacion" />
+        <activity android:name=".SelectNivelSumas" />
         <activity android:name="com.example.brendaperez.combinaciones.NivelCombi" />
         <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_1" />
         <activity android:name="com.example.brendaperez.combinaciones.NivelCombi_2" />
@@ -40,11 +42,11 @@
         <activity android:name="com.example.brendaperez.sumas.NivelSuma7" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma8" />
         <activity android:name="com.example.brendaperez.sumas.NivelSuma9" />
-        <activity android:name="com.example.brendaperez.FraccionesyExtra" />
-        <activity android:name="com.example.brendaperez.MultiplicacionyDivision" />
-        <activity android:name="com.example.brendaperez.SelectNivelDivision" />
-        <activity android:name="com.example.brendaperez.SelectNivelResta" />
-        <activity android:name="com.example.brendaperez.SelectNivelExtra" />
+        <activity android:name=".FraccionesyExtra" />
+        <activity android:name=".MultiplicacionyDivision" />
+        <activity android:name=".SelectNivelDivision" />
+        <activity android:name=".SelectNivelResta" />
+        <activity android:name=".SelectNivelExtra" />
         <activity android:name="com.example.brendaperez.restas.NivelResta" />
         <activity android:name="com.example.brendaperez.restas.NivelResta1" />
         <activity android:name="com.example.brendaperez.restas.NivelResta2" />
