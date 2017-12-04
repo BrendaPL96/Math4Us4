@@ -71,7 +71,7 @@ public class NivelCombi extends AppCompatActivity {
                 secondOperand = signsAllowed.get(getRandomNumber(0, signsAllowed.size() - 1));
                 randomIntThree = getRandomNumber(min, max); // generate an int between min and max
             }
-            while ((Collections.frequency(answers, randomIntOne / randomIntTwo)) > 0);
+            while ((Collections.frequency(answers, randomIntOne / randomIntTwo)) < 2);
             numbersFirstPos.add(randomIntOne); // put it on the first pos of the list
             operandsOne.add(firstOperand);
             numbersSecondPos.add(randomIntTwo); // then put it in the list
@@ -85,7 +85,7 @@ public class NivelCombi extends AppCompatActivity {
 
 
     // TO BE OVERRIDE
-    private void calculateAnswer(int i) {
+    public void calculateAnswer(int i) {
         switch (operandsOne.get(i)) {
             case "+":
                 switch (operandsTwo.get(i)) {
@@ -106,19 +106,6 @@ public class NivelCombi extends AppCompatActivity {
                         break;
                 }
         }
-        /*if (operandsOne.get(i).equals("+")) {
-            if (operandsTwo.get(i).equals("+")) {
-                answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) + numbersThirdPos.get(i));
-            } else {
-                answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) - numbersThirdPos.get(i));
-            }
-        } else {
-            if (operandsTwo.get(i).equals("+")) {
-                answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) + numbersThirdPos.get(i));
-            } else {
-                answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) - numbersThirdPos.get(i));
-            }
-        }*/
     }
 
     private int getRandomNumber(int min, int max) {
@@ -180,7 +167,7 @@ public class NivelCombi extends AppCompatActivity {
                 t.setText("");
                 // every 3 questions, put a map instead of a check sign
                 if ((question + 1) % 3 == 0) {
-                    t.setBackgroundResource(R.drawable.worldmap);
+                    t.setBackgroundResource(R.drawable.cometa);
                 } else {
                     t.setBackgroundResource(R.drawable.right);
                 }
@@ -207,11 +194,11 @@ public class NivelCombi extends AppCompatActivity {
             // CASE IT WAS THE LAST QUESTION
         } else {
             t.setText("");
-            t.setBackgroundResource(R.drawable.worldmap);
+            t.setBackgroundResource(R.drawable.cometa);
             ope.setVisibility(View.GONE);
             bravo.setTextSize(22);
             bravo.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            bravo.setText(R.string.bravoDiviMap);
+            bravo.setText(R.string.bravoCombiCometas);
         }
     }
 

@@ -2,9 +2,10 @@
     <string name="app_name">Math4Us</string>
 
 
-    <string name="bravoSum">¡Muy bien, %1$d + %2$d = %3$d!</string>
-    <string name="bravoRest">¡Muy bien, %1$d - %2$d = %3$d!</string>
-    <string name="bravoDiviMap">¡Felicidades!\n¡Encontraste todos los mapas!</string>
+    <string name="bravoSum">¡Muy bien observador,\n %1$d + %2$d = %3$d!</string>
+    <string name="bravoRest">¡Muy bien observador,\n %1$d - %2$d = %3$d!</string>
+    <string name="bravoDiviMap">¡Felicidades explorador!\n¡Encontraste todos los mapas!</string>
+    <string name="bravoCombiCometas">¡Felicidades astronauta!\n¡Encontraste todos los cometas!</string>
     <string name="operation">%1$d %2$s %3$d %4$s %5$d = </string>
 
     <string name="bee">abeja</string>
@@ -16,4 +17,8 @@
     <string name="minus">minus</string>
     <string name="question">question</string>
     <string name="title_activity_nivel__s2">Nivel_S2</string>
+
+    <string name="combifacil">Fácil\n(sumas y restas)</string>
+    <string name="combimedio">Medio\n(sumas, restas y multiplicaciones)</string>
+    <string name="combidif">Difícil\n(sumas, restas, multiplicaciones y divisiones)</string>
 </resources>

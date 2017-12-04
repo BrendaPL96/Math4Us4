@@ -7,9 +7,9 @@ import com.example.brendaperez.math4us.R;
 import java.util.Arrays;
 import java.util.List;
 
-public class NivelCombi_2 extends NivelCombi {
+public class NivelCombi_3 extends NivelCombi {
 
-    List<String> signsToUse = Arrays.asList("+", "-", "x");
+    List<String> signsToUse = Arrays.asList("+", "-", "x", "÷");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,9 @@ public class NivelCombi_2 extends NivelCombi {
                     case "x":
                         answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) * numbersThirdPos.get(i));
                         break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
                 }
                 break;
             case "-":
@@ -46,6 +49,9 @@ public class NivelCombi_2 extends NivelCombi {
                     case "x":
                         answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) * numbersThirdPos.get(i));
                         break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
                 }
                 break;
             case "x":
@@ -58,6 +64,25 @@ public class NivelCombi_2 extends NivelCombi {
                         break;
                     case "x":
                         answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
+                }
+                break;
+            case "÷":
+                switch (operandsTwo.get(i)) {
+                    case "+":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) + numbersThirdPos.get(i));
+                        break;
+                    case "-":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) - numbersThirdPos.get(i));
+                        break;
+                    case "x":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) / numbersThirdPos.get(i));
                         break;
                 }
                 break;
