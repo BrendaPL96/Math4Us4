@@ -7,9 +7,9 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -30,19 +30,19 @@
             android:name=".Registro"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.Categorias"
+            android:name="com.example.brendaperez.math4us.Categorias"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.NivelFraccion"
+            android:name="com.example.brendaperez.math4us.NivelFraccion"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.SumasyRestas"
+            android:name="com.example.brendaperez.math4us.SumasyRestas"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.NivelMultiplicacion"
+            android:name="com.example.brendaperez.math4us.NivelMultiplicacion"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.SelectNivelSumas"
+            android:name="com.example.brendaperez.math4us.SelectNivelSumas"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.brendaperez.combinaciones.NivelCombi"
@@ -87,19 +87,19 @@
             android:name="com.example.brendaperez.sumas.NivelSuma9"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.FraccionesyExtra"
+            android:name="com.example.brendaperez.math4us.FraccionesyExtra"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.MultiplicacionyDivision"
+            android:name="com.example.brendaperez.math4us.MultiplicacionyDivision"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.SelectNivelDivision"
+            android:name="com.example.brendaperez.math4us.SelectNivelDivision"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.SelectNivelResta"
+            android:name="com.example.brendaperez.math4us.SelectNivelResta"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.brendaperez.SelectNivelExtra"
+            android:name="com.example.brendaperez.math4us.SelectNivelExtra"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.brendaperez.restas.NivelResta"
