@@ -86,7 +86,27 @@ public class NivelCombi extends AppCompatActivity {
 
     // TO BE OVERRIDE
     private void calculateAnswer(int i) {
-        if (operandsOne.get(i).equals("+")) {
+        switch (operandsOne.get(i)) {
+            case "+":
+                switch (operandsTwo.get(i)) {
+                    case "+":
+                        answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) + numbersThirdPos.get(i));
+                        break;
+                    case "-":
+                        answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) - numbersThirdPos.get(i));
+                        break;
+                }
+            case "-":
+                switch (operandsTwo.get(i)) {
+                    case "+":
+                        answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) + numbersThirdPos.get(i));
+                        break;
+                    case "-":
+                        answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) - numbersThirdPos.get(i));
+                        break;
+                }
+        }
+        /*if (operandsOne.get(i).equals("+")) {
             if (operandsTwo.get(i).equals("+")) {
                 answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) + numbersThirdPos.get(i));
             } else {
@@ -98,7 +118,7 @@ public class NivelCombi extends AppCompatActivity {
             } else {
                 answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) - numbersThirdPos.get(i));
             }
-        }
+        }*/
     }
 
     private int getRandomNumber(int min, int max) {

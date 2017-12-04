@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/cohete" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fracciones "
@@ -138,7 +138,7 @@
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView53"
+        android:id="@+id/hardrocket"
         android:layout_width="81dp"
         android:layout_height="82dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,7 +150,7 @@
         app:srcCompat="@drawable/cohete" />
 
     <ImageView
-        android:id="@+id/imageView54"
+        android:id="@+id/mediorocket"
         android:layout_width="81dp"
         android:layout_height="82dp"
         app:layout_constraintBottom_toBottomOf="parent"

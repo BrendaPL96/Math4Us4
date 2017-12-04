@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brendaperez.NivelExtra">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="118dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="Combinación"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/easyrocket"
+        android:layout_width="101dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToNiv1"
+        app:layout_constraintBottom_toTopOf="@+id/hardrocket"
+        app:layout_constraintEnd_toStartOf="@+id/easycomb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/cohete" />
+
+    <ImageView
+        android:id="@+id/mediorocket"
+        android:layout_width="101dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hardcomb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardrocket"
+        app:srcCompat="@drawable/cohete" />
+
+    <ImageView
+        android:id="@+id/hardrocket"
+        android:layout_width="101dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/mediorocket"
+        app:layout_constraintEnd_toStartOf="@+id/mediocomb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyrocket"
+        app:srcCompat="@drawable/cohete" />
+
+    <TextView
+        android:id="@+id/easycomb"
+        android:layout_width="215dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="Fácil\n(sumas y restas)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mediocomb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/easyrocket"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/mediocomb"
+        android:layout_width="215dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Medio\n(sumas, restas y multiplicaciones)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hardcomb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hardrocket"
+        app:layout_constraintTop_toBottomOf="@+id/easycomb" />
+
+    <TextView
+        android:id="@+id/hardcomb"
+        android:layout_width="215dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Difícil\n(sumas, restas, multiplicaciones y divisiones)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mediorocket"
+        app:layout_constraintTop_toBottomOf="@+id/mediocomb" />
+
+</android.support.constraint.ConstraintLayout>

@@ -13,7 +13,7 @@ public class NivelExtra extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nivelextra);
+        setContentView(R.layout.selectnivelextra);
     }
 
     public void goToNiv1(View view) {
