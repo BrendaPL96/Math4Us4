@@ -12,7 +12,7 @@
         android:layout_height="108dp"
         android:gravity="center"
         android:text="DERECHOS DE AUTOR"
-        android:textColor="?android:attr/colorAccent"
+        android:textColor="@color/colorAccent"
         android:textSize="40sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
