@@ -10,7 +10,6 @@ import com.example.brendaperez.math4us.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +30,7 @@ public class NivelCombi extends AppCompatActivity {
     List<String> signsAllowed;
     int min;
     int max;
+    int resultMax;
 
     int randomIntOne;
     String firstOperand;
@@ -71,21 +71,20 @@ public class NivelCombi extends AppCompatActivity {
                 secondOperand = signsAllowed.get(getRandomNumber(0, signsAllowed.size() - 1));
                 randomIntThree = getRandomNumber(min, max); // generate an int between min and max
             }
-            while ((Collections.frequency(answers, randomIntOne / randomIntTwo)) < 2);
+            while (calculateAnswer(randomIntOne, firstOperand, randomIntTwo, secondOperand, randomIntThree) > resultMax);
             numbersFirstPos.add(randomIntOne); // put it on the first pos of the list
             operandsOne.add(firstOperand);
             numbersSecondPos.add(randomIntTwo); // then put it in the list
             operandsTwo.add(secondOperand);
             numbersThirdPos.add(randomIntThree);
             // calc and add the answer
-            calculateAnswer(i);
+            addAnswer(i);
         }
 
     }
 
 
-    // TO BE OVERRIDE
-    public void calculateAnswer(int i) {
+    public void addAnswer(int i) {
         switch (operandsOne.get(i)) {
             case "+":
                 switch (operandsTwo.get(i)) {
@@ -95,7 +94,14 @@ public class NivelCombi extends AppCompatActivity {
                     case "-":
                         answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) - numbersThirdPos.get(i));
                         break;
+                    case "x":
+                        answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) + numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
                 }
+                break;
             case "-":
                 switch (operandsTwo.get(i)) {
                     case "+":
@@ -104,11 +110,121 @@ public class NivelCombi extends AppCompatActivity {
                     case "-":
                         answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) - numbersThirdPos.get(i));
                         break;
+                    case "x":
+                        answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) - numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
                 }
+                break;
+            case "x":
+                switch (operandsTwo.get(i)) {
+                    case "+":
+                        answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) + numbersThirdPos.get(i));
+                        break;
+                    case "-":
+                        answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) - numbersThirdPos.get(i));
+                        break;
+                    case "x":
+                        answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) * numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
+                }
+                break;
+            case "÷":
+                switch (operandsTwo.get(i)) {
+                    case "+":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) + numbersThirdPos.get(i));
+                        break;
+                    case "-":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) - numbersThirdPos.get(i));
+                        break;
+                    case "x":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) * numbersThirdPos.get(i));
+                        break;
+                    case "÷":
+                        answers.add(i, numbersFirstPos.get(i) / numbersSecondPos.get(i) / numbersThirdPos.get(i));
+                        break;
+                }
+                break;
         }
     }
 
-    private int getRandomNumber(int min, int max) {
+    public int calculateAnswer(int numOne, String opeOne, int numTwo, String opeTwo, int numThree) {
+        int answer = 0;
+        switch (opeOne) {
+            case "+":
+                switch (opeTwo) {
+                    case "+":
+                        answer = numOne + numTwo + numThree;
+                        break;
+                    case "-":
+                        answer = numOne + numTwo - numThree;
+                        break;
+                    case "x":
+                        answer = numOne + numTwo * numThree;
+                        break;
+                    case "÷":
+                        answer = numOne + numTwo / numThree;
+                        break;
+                }
+                break;
+            case "-":
+                switch (opeTwo) {
+                    case "+":
+                        answer = numOne - numTwo + numThree;
+                        break;
+                    case "-":
+                        answer = numOne - numTwo - numThree;
+                        break;
+                    case "x":
+                        answer = numOne - numTwo * numThree;
+                        break;
+                    case "÷":
+                        answer = numOne - numTwo / numThree;
+                        break;
+                }
+                break;
+            case "x":
+                switch (opeTwo) {
+                    case "+":
+                        answer = numOne * numTwo + numThree;
+                        break;
+                    case "-":
+                        answer = numOne * numTwo - numThree;
+                        break;
+                    case "x":
+                        answer = numOne * numTwo * numThree;
+                        break;
+                    case "÷":
+                        answer = numOne * numTwo / numThree;
+                        break;
+                }
+                break;
+            case "÷":
+                switch (opeTwo) {
+                    case "+":
+                        answer = numOne / numTwo + numThree;
+                        break;
+                    case "-":
+                        answer = numOne / numTwo - numThree;
+                        break;
+                    case "x":
+                        answer = numOne / numTwo * numThree;
+                        break;
+                    case "÷":
+                        answer = numOne / numTwo / numThree;
+                        break;
+                }
+                break;
+        }
+        return answer;
+    }
+
+    public int getRandomNumber(int min, int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }
 
@@ -209,5 +325,9 @@ public class NivelCombi extends AppCompatActivity {
 
     public void setSigns(List<String> signs) {
         signsAllowed = signs;
+    }
+
+    public void setResultMax(int maxAllowed) {
+        resultMax = maxAllowed;
     }
 }

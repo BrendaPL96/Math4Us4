@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.example.brendaperez.combinaciones.NivelCombi_1;
 import com.example.brendaperez.combinaciones.NivelCombi_2;
+import com.example.brendaperez.combinaciones.NivelCombi_3;
 import com.example.brendaperez.math4us.R;
 
 public class SelectNivelExtra extends AppCompatActivity {
@@ -26,6 +27,12 @@ public class SelectNivelExtra extends AppCompatActivity {
     public void goToNiv2(View view) {
 
         Intent objI = new Intent(SelectNivelExtra.this, NivelCombi_2.class);
+        startActivity(objI);
+    }
+
+    public void goToNiv3(View view) {
+
+        Intent objI = new Intent(SelectNivelExtra.this, NivelCombi_3.class);
         startActivity(objI);
     }
 }

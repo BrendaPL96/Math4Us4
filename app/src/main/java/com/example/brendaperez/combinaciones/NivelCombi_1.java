@@ -13,9 +13,10 @@ public class NivelCombi_1 extends NivelCombi {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_nivel_combi_1);
+        setContentView(R.layout.activity_nivel_combi);
         setMinMax(1, 10);
         setSigns(signsToUse);
+        setResultMax(100);
         super.onCreate(savedInstanceState);
     }
 }

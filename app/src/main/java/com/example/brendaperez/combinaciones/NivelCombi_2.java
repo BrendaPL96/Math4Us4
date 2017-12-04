@@ -13,14 +13,15 @@ public class NivelCombi_2 extends NivelCombi {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_nivel_combi_1);
+        setContentView(R.layout.activity_nivel_combi);
         setMinMax(1, 10);
         setSigns(signsToUse);
+        setResultMax(500);
         super.onCreate(savedInstanceState);
     }
 
     @Override
-    public void calculateAnswer(int i) {
+    public void addAnswer(int i) {
         switch (operandsOne.get(i)) {
             case "+":
                 switch (operandsTwo.get(i)) {
